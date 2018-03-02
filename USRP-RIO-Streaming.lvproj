@@ -4190,10 +4190,24 @@
 					<Item Name="xsimk417FC7712F0F4A3C95450BAF224B3F38.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_32SimFiles/xsim.dir/MaxFanoutFf/xsimk417FC7712F0F4A3C95450BAF224B3F38.dll"/>
 					<Item Name="FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll"/>
 					<Item Name="xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/xsim.dir/FourInputGlitchFreeMuxBasicElements/xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll"/>
+					<Item Name="niUsrpRio Synchronization v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/FPGA/niUsrpRio Synchronization v1 FPGA.lvlib"/>
+					<Item Name="niInstr Overclocked TDC v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/niInstr Overclocked TDC v1 FPGA.lvlib"/>
+					<Item Name="xsimkED9697BB179F486B937DBFC6036BE2CD.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/xsim.dir/k7Tdc/xsimkED9697BB179F486B937DBFC6036BE2CD.dll"/>
+					<Item Name="Tdc_B556FC327CC64155836DD41C31E521AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/Tdc_B556FC327CC64155836DD41C31E521AC.dll"/>
+					<Item Name="niUsrpRio Synchronization v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/Shared/niUsrpRio Synchronization v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Config v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/Shared/niUsrpRio Config v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Time v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/FPGA/niUsrpRio Time v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Time v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/Shared/niUsrpRio Time v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Config v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/FPGA/niUsrpRio Config v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Instruction Synchronizer v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/FPGA/niUsrpRio Instruction Synchronizer v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Instruction Synchronizer v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/Shared/niUsrpRio Instruction Synchronizer v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio GPS v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/FPGA/niUsrpRio GPS v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio GPS v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/Shared/niUsrpRio GPS v1 Shared.lvlib"/>
 				</Item>
 				<Item Name="vi.lib" Type="Folder">
 					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
@@ -6131,10 +6145,6 @@
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
-				<Item Name="USRP Create Resources.vi" Type="VI" URL="../FPGA/SubVIs/USRP Create Resources.vi"/>
-				<Item Name="USRP Registers.vi" Type="VI" URL="../FPGA/SubVIs/USRP Registers.vi"/>
-				<Item Name="USRP Generate Data.vi" Type="VI" URL="../FPGA/SubVIs/USRP Generate Data.vi"/>
-				<Item Name="Running Min.vi" Type="VI" URL="../Host/SubVIs/Running Min.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Dummy (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
