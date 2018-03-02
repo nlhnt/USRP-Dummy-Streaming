@@ -119,13 +119,33 @@
 			<Item Name="USRP Self Correct Rx IQ Offset.vi" Type="VI" URL="../Host/SubVIs/USRP Self Correct Rx IQ Offset.vi"/>
 		</Item>
 		<Item Name="Host" Type="Folder">
-			<Item Name="USRP Stream to Disk Queues USRP and Binary File IO.vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP and Binary File IO.vi"/>
+			<Item Name="SubVIs" Type="Folder">
+				<Item Name="Calculate Throughput Wrapper.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput Wrapper.vi"/>
+				<Item Name="Calculate Throughput.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput.vi"/>
+				<Item Name="Coerce Sample Size Down.vi" Type="VI" URL="../Host/SubVIs/Coerce Sample Size Down.vi"/>
+				<Item Name="Coerce Sample Size.vi" Type="VI" URL="../Host/SubVIs/Coerce Sample Size.vi"/>
+				<Item Name="Compute Transfer Rate for FPGA.vi" Type="VI" URL="../Host/SubVIs/Compute Transfer Rate for FPGA.vi"/>
+				<Item Name="Continuous Counter.vi" Type="VI" URL="../Host/SubVIs/Continuous Counter.vi"/>
+				<Item Name="Convert Available to Used.vi" Type="VI" URL="../Host/SubVIs/Convert Available to Used.vi"/>
+				<Item Name="Data Sink.vi" Type="VI" URL="../Host/SubVIs/Data Sink.vi"/>
+				<Item Name="Data Source.vi" Type="VI" URL="../Host/SubVIs/Data Source.vi"/>
+				<Item Name="Host Buffer and TDMS Status.vi" Type="VI" URL="../Host/SubVIs/Host Buffer and TDMS Status.vi"/>
+				<Item Name="Host Buffers Status.vi" Type="VI" URL="../Host/SubVIs/Host Buffers Status.vi"/>
+				<Item Name="Input FIFO Status.vi" Type="VI" URL="../Host/SubVIs/Input FIFO Status.vi"/>
+				<Item Name="Output FIFO Status.vi" Type="VI" URL="../Host/SubVIs/Output FIFO Status.vi"/>
+				<Item Name="Reduce Fraction.vi" Type="VI" URL="../Host/SubVIs/Reduce Fraction.vi"/>
+				<Item Name="Running Max.vi" Type="VI" URL="../Host/SubVIs/Running Max.vi"/>
+				<Item Name="Running Min.vi" Type="VI" URL="../Host/SubVIs/Running Min.vi"/>
+				<Item Name="Verify FIFO Transfer Size with Host Buffer Depth.vi" Type="VI" URL="../Host/SubVIs/Verify FIFO Transfer Size with Host Buffer Depth.vi"/>
+				<Item Name="Verify Host Buffers Size.vi" Type="VI" URL="../Host/SubVIs/Verify Host Buffers Size.vi"/>
+			</Item>
+			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP (Host).vi"/>
 			<Item Name="USRP Dummy DMA (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA (Host).vi"/>
 			<Item Name="USRP Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Rx Streaming (Host).vi"/>
 			<Item Name="USRP Streaming to Memory FlexRIO (Host).vi" Type="VI" URL="../Host/USRP Streaming to Memory FlexRIO (Host).vi"/>
 			<Item Name="USRP Tx and Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx and Rx Streaming (Host).vi"/>
 			<Item Name="USRP Tx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx Streaming (Host).vi"/>
-			<Item Name="High Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/High Throughput Streaming - To Disk (Host).vi"/>
+			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/USRP Throughput Streaming - To Disk (Host).vi"/>
 		</Item>
 		<Item Name="Streaming Xcvr" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -4189,13 +4209,6 @@
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
-				<Item Name="USRP Registers.vi" Type="VI" URL="../FPGA/SubVIs/USRP Registers.vi"/>
-				<Item Name="USRP Create Resources.vi" Type="VI" URL="../FPGA/SubVIs/USRP Create Resources.vi"/>
-				<Item Name="Running Min.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Running Min.vi"/>
-				<Item Name="Continuous Counter.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Continuous Counter.vi"/>
-				<Item Name="Data Source.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Data Source.vi"/>
-				<Item Name="Compute Transfer Rate for FPGA.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Compute Transfer Rate for FPGA.vi"/>
-				<Item Name="Data Sink.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Data Sink.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Throughput Streaming (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -4226,8 +4239,8 @@
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
 					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
 					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/OneDrive - National Instruments/System Engineering/LabVIEW-Projects/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx</Property>
 					<Property Name="ProjectPath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/USRP-RIO-Streaming.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">true</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
@@ -6132,8 +6145,6 @@
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
-				<Item Name="USRP Create Resources.vi" Type="VI" URL="../FPGA/SubVIs/USRP Create Resources.vi"/>
-				<Item Name="USRP Registers.vi" Type="VI" URL="../FPGA/SubVIs/USRP Registers.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Dummy (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -6281,15 +6292,6 @@
 				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
-			<Item Name="Calculate Throughput Wrapper.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput Wrapper.vi"/>
-			<Item Name="Calculate Throughput.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput.vi"/>
-			<Item Name="Coerce Sample Size.vi" Type="VI" URL="../Host/SubVIs/Coerce Sample Size.vi"/>
-			<Item Name="Continuous Counter.vi" Type="VI" URL="../Host/SubVIs/Continuous Counter.vi"/>
-			<Item Name="Convert Available to Used.vi" Type="VI" URL="../Host/SubVIs/Convert Available to Used.vi"/>
-			<Item Name="HighThroug_PXIe-7966R.lvbitx" Type="Document" URL="../Host/FPGA Bitfiles/HighThroug_PXIe-7966R.lvbitx"/>
-			<Item Name="Host Buffer and TDMS Status.vi" Type="VI" URL="../Host/SubVIs/Host Buffer and TDMS Status.vi"/>
-			<Item Name="Host Buffers Status.vi" Type="VI" URL="../../../../../../../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Host Buffers Status.vi"/>
-			<Item Name="Input FIFO Status.vi" Type="VI" URL="../Host/SubVIs/Input FIFO Status.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -6297,12 +6299,9 @@
 			<Item Name="niusrp2.dll" Type="Document" URL="niusrp2.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Reduce Fraction.vi" Type="VI" URL="../Host/SubVIs/Reduce Fraction.vi"/>
-			<Item Name="Running Max.vi" Type="VI" URL="../Host/SubVIs/Running Max.vi"/>
 			<Item Name="USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_-Xglc-1l0hs.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_-Xglc-1l0hs.lvbitx"/>
+			<Item Name="USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx"/>
-			<Item Name="Verify FIFO Transfer Size with Host Buffer Depth.vi" Type="VI" URL="../Host/SubVIs/Verify FIFO Transfer Size with Host Buffer Depth.vi"/>
-			<Item Name="Verify Host Buffers Size.vi" Type="VI" URL="../Host/SubVIs/Verify Host Buffers Size.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
