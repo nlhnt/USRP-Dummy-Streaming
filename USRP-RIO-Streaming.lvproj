@@ -4195,6 +4195,7 @@
 					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 				</Item>
+				<Item Name="Compute Transfer Rate for FPGA.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Compute Transfer Rate for FPGA.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Throughput Streaming (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
