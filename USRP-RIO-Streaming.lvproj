@@ -4195,7 +4195,6 @@
 					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 				</Item>
-				<Item Name="Compute Transfer Rate for FPGA.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Compute Transfer Rate for FPGA.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Throughput Streaming (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -6289,7 +6288,7 @@
 			<Item Name="niusrp2.dll" Type="Document" URL="niusrp2.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_-Xglc-1l0hs.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_-Xglc-1l0hs.lvbitx"/>
+			<Item Name="USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx"/>
 		</Item>
