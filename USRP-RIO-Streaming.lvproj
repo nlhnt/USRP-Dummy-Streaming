@@ -146,6 +146,8 @@
 			<Item Name="USRP Tx and Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx and Rx Streaming (Host).vi"/>
 			<Item Name="USRP Tx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx Streaming (Host).vi"/>
 			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/USRP Throughput Streaming - To Disk (Host).vi"/>
+			<Item Name="USRP Dummy DMA Zero Copy (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Zero Copy (Host).vi"/>
+			<Item Name="USRP Dummy DMA Fixed Fetch (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fixed Fetch (Host).vi"/>
 		</Item>
 		<Item Name="Streaming Xcvr" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -4209,13 +4211,6 @@
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
-				<Item Name="Compute Transfer Rate for FPGA.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Compute Transfer Rate for FPGA.vi"/>
-				<Item Name="Data Sink.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Data Sink.vi"/>
-				<Item Name="Continuous Counter.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Continuous Counter.vi"/>
-				<Item Name="Running Min.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Running Min.vi"/>
-				<Item Name="Data Source.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2016/examples/FlexRIO/High Throughput/Streaming/SubVIs/Data Source.vi"/>
-				<Item Name="USRP Create Resources.vi" Type="VI" URL="../FPGA/SubVIs/USRP Create Resources.vi"/>
-				<Item Name="USRP Registers.vi" Type="VI" URL="../FPGA/SubVIs/USRP Registers.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Throughput Streaming (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
