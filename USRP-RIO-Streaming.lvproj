@@ -119,6 +119,7 @@
 			<Item Name="USRP Self Correct Rx IQ Offset.vi" Type="VI" URL="../Host/SubVIs/USRP Self Correct Rx IQ Offset.vi"/>
 		</Item>
 		<Item Name="Host" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">1</Property>
 			<Item Name="SubVIs" Type="Folder">
 				<Item Name="Calculate Throughput Wrapper.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput Wrapper.vi"/>
 				<Item Name="Calculate Throughput.vi" Type="VI" URL="../Host/SubVIs/Calculate Throughput.vi"/>
@@ -139,15 +140,15 @@
 				<Item Name="Verify FIFO Transfer Size with Host Buffer Depth.vi" Type="VI" URL="../Host/SubVIs/Verify FIFO Transfer Size with Host Buffer Depth.vi"/>
 				<Item Name="Verify Host Buffers Size.vi" Type="VI" URL="../Host/SubVIs/Verify Host Buffers Size.vi"/>
 			</Item>
-			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP (Host).vi"/>
-			<Item Name="USRP Dummy DMA (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA (Host).vi"/>
+			<Item Name="USRP Dummy DMA Fetch Whatever (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fetch Whatever (Host).vi"/>
+			<Item Name="USRP Dummy DMA Fixed Fetch (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fixed Fetch (Host).vi"/>
+			<Item Name="USRP Dummy DMA Zero Copy (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Zero Copy (Host).vi"/>
 			<Item Name="USRP Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Rx Streaming (Host).vi"/>
+			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP (Host).vi"/>
 			<Item Name="USRP Streaming to Memory FlexRIO (Host).vi" Type="VI" URL="../Host/USRP Streaming to Memory FlexRIO (Host).vi"/>
+			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/USRP Throughput Streaming - To Disk (Host).vi"/>
 			<Item Name="USRP Tx and Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx and Rx Streaming (Host).vi"/>
 			<Item Name="USRP Tx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx Streaming (Host).vi"/>
-			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/USRP Throughput Streaming - To Disk (Host).vi"/>
-			<Item Name="USRP Dummy DMA Zero Copy (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Zero Copy (Host).vi"/>
-			<Item Name="USRP Dummy DMA Fixed Fetch (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fixed Fetch (Host).vi"/>
 		</Item>
 		<Item Name="Streaming Xcvr" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -6308,6 +6309,47 @@
 			<Item Name="USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx"/>
 		</Item>
-		<Item Name="Build Specifications" Type="Build"/>
+		<Item Name="Build Specifications" Type="Build">
+			<Item Name="My Dummy DMA Fixed Fetch (Host)" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{E9E149EB-3C92-42E5-AB6B-35FF5267A196}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{1CFB0726-0B6E-4475-8969-6F6506E393CC}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{90D1973B-E484-4553-9AF1-22810CFDAFFF}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">My Dummy DMA Fixed Fetch (Host)</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/My Dummy DMA Fixed Fetch (Host)</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{4C4271FA-0358-4322-A881-5FB618692CE9}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">My Dummy DMA Fixed Fetch (Host).exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/My Dummy DMA Fixed Fetch (Host)/My Dummy DMA Fixed Fetch (Host).exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/My Dummy DMA Fixed Fetch (Host)/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">relativeToProject</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{96742272-A8D4-45BF-9CFB-9B8CE6761914}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Host/USRP Dummy DMA Fixed Fetch (Host).vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">My Dummy DMA Fixed Fetch (Host)</Property>
+				<Property Name="TgtF_internalName" Type="Str">My Dummy DMA Fixed Fetch (Host)</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
+				<Property Name="TgtF_productName" Type="Str">My Dummy DMA Fixed Fetch (Host)</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{2C9E08DA-8525-426B-85CA-5353961C6C65}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">My Dummy DMA Fixed Fetch (Host).exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
