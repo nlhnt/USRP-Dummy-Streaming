@@ -137,6 +137,8 @@
 				<Item Name="Reduce Fraction.vi" Type="VI" URL="../Host/SubVIs/Reduce Fraction.vi"/>
 				<Item Name="Running Max.vi" Type="VI" URL="../Host/SubVIs/Running Max.vi"/>
 				<Item Name="Running Min.vi" Type="VI" URL="../Host/SubVIs/Running Min.vi"/>
+				<Item Name="USRP Copy Reference for Preview.vi" Type="VI" URL="../Host/SubVIs/USRP Copy Reference for Preview.vi"/>
+				<Item Name="USRP Read Data Preview.vi" Type="VI" URL="../Host/SubVIs/USRP Read Data Preview.vi"/>
 				<Item Name="Verify FIFO Transfer Size with Host Buffer Depth.vi" Type="VI" URL="../Host/SubVIs/Verify FIFO Transfer Size with Host Buffer Depth.vi"/>
 				<Item Name="Verify Host Buffers Size.vi" Type="VI" URL="../Host/SubVIs/Verify Host Buffers Size.vi"/>
 			</Item>
@@ -6148,9 +6150,6 @@
 					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
 					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				</Item>
-				<Item Name="USRP Create Resources.vi" Type="VI" URL="../FPGA/SubVIs/USRP Create Resources.vi"/>
-				<Item Name="USRP Registers.vi" Type="VI" URL="../FPGA/SubVIs/USRP Registers.vi"/>
-				<Item Name="Running Min.vi" Type="VI" URL="../Host/SubVIs/Running Min.vi"/>
 			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="USRP Dummy (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
@@ -6181,8 +6180,8 @@
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
 					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
 					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummyv2(FPGA_kYza4iCu9yA.lvbitx</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummyv2(FPGA_kYza4iCu9yA.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
 					<Property Name="ProjectPath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/USRP-RIO-Streaming.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">true</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
@@ -6193,8 +6192,6 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="USRP Copy Reference for Preview.vi" Type="VI" URL="../Host/SubVIs/USRP Copy Reference for Preview.vi"/>
-		<Item Name="USRP Read Data Preview.vi" Type="VI" URL="../Host/SubVIs/USRP Read Data Preview.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">1</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -6307,6 +6304,7 @@
 			<Item Name="niusrp2.dll" Type="Document" URL="niusrp2.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_DummyDMA_USRPDummyv2(FPGA_kYza4iCu9yA.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummyv2(FPGA_kYza4iCu9yA.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_FlexRIOHighThrou_USRPThroughputSt_y+O3+0ZwI2I.lvbitx"/>
 			<Item Name="USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx" Type="Document" URL="../FPGA Bitfiles/USRP-RIO-Streami_USRP294xR;295xR2_USRPThroughputSt_iEY1GQZeXEE.lvbitx"/>
