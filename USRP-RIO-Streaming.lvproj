@@ -142,8 +142,7 @@
 				<Item Name="Verify FIFO Transfer Size with Host Buffer Depth.vi" Type="VI" URL="../Host/SubVIs/Verify FIFO Transfer Size with Host Buffer Depth.vi"/>
 				<Item Name="Verify Host Buffers Size.vi" Type="VI" URL="../Host/SubVIs/Verify Host Buffers Size.vi"/>
 			</Item>
-			<Item Name="USRP Dummy DMA Fetch Whatever (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fetch Whatever (Host).vi"/>
-			<Item Name="USRP Dummy DMA Fixed Fetch (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Fixed Fetch (Host).vi"/>
+			<Item Name="USRP Dummy DMA to Memory (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA to Memory (Host).vi"/>
 			<Item Name="USRP Dummy DMA Zero Copy (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Zero Copy (Host).vi"/>
 			<Item Name="USRP Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Rx Streaming (Host).vi"/>
 			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP (Host).vi"/>
@@ -6339,7 +6338,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{96742272-A8D4-45BF-9CFB-9B8CE6761914}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Host/USRP Dummy DMA Fixed Fetch (Host).vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Host/USRP Dummy DMA to Memory (Host).vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
