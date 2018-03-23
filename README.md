@@ -1,3 +1,5 @@
+## Example demostrating how to stream dummy data from the USRP RIO FPGA to the host.
+
 -> USRP Dummy DMA (Host)
 	- PXIe-8135
 	- PXIe-8374
