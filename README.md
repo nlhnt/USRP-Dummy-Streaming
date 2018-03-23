@@ -10,7 +10,7 @@ requested decimation. The minimum value decimation value is 2 which yiels a u64 
 for a total of 8 bytes at 100 MHz or 800 MB/s.
 
 The codes also has a U64 LSFR that has not been tied to the **target to host** FIFO and
-may not trully implement an LSFR :). The code implements a [Fibonacci](https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Fibonacci_LFSRs) but it has not been validated. For now the code only
+may not trully implement an LSFR :). The LabVIEW FGPA implements a [Fibonacci LSFR](https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Fibonacci_LFSRs) but  has not been validated. For now the code only
 streams a sequential ramp. 
 
 ### Things to remember:
