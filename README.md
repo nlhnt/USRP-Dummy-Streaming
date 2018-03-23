@@ -4,8 +4,8 @@ Example demostrating how to stream dummy data from the USRP RIO FPGA to the host
 was developed using the receiver of a USRP-2945R. Host and FPGA were carefully simplified to
 the minimum dependencies so it can be compile with other targets.
 
-For now the code streams at discrete decimation values of 200 MHz and sequential, incrementing
-ramp of U62 that starts at 0. In the host you will see the ramp skip values depending on the
+For now the code streams at discrete decimation steps of 200 MHz a sequential, incrementing
+ramp of U64 that starts at 0. In the host you will see the ramp skip values depending on the
 requested decimation. The minimum value decimation value is 2 which yiels a u64 at 200/2 MHz
 for a total of 8 bytes at 100 MHz or 800 MB/s.
 
