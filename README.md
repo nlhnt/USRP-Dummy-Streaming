@@ -9,12 +9,17 @@ ramp of U62 that starts at 0. In the host you will see the ramp skip values depe
 requested decimation. The minimum value decimation value is 2 which yiels a u64 at 200/2 MHz
 for a total of 8 bytes at 100 MHz or 800 MB/s.
 
+## Things to remember:
+* Reserving the space in disk for the async tdms requires admin priviliges. Make sure you launch
+LabVIEW accordingly.
+
 * Hardware
 	- PXIe-8135
 	- PXIe-8374
+	- X310, USRP-29xxR
 
 * Software
-	- LabVIEW 2016
+	- LabVIEW 2016 (32 bits)
 	- LabVIEW FPGA 2016
 	- NI-USRP
 	- NIFlexRIO
