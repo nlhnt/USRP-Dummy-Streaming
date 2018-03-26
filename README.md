@@ -6,7 +6,7 @@ the minimum dependencies so it can be compile with other targets.
 
 For now the code streams at discrete decimation steps of 200 MHz a sequential, incrementing
 ramp of U64 that starts at 0. In the host you will see the ramp skip values depending on the
-requested decimation. The minimum value decimation value is 2 which yiels a u64 at 200/2 MHz
+requested decimation. The minimum value decimation value is 2 which yields u64s at 200/2 MHz
 for a total of 8 bytes at 100 MHz or 800 MB/s.
 
 The codes also has a U64 LSFR that has not been tied to the **target to host** FIFO and
