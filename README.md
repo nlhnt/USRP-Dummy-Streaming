@@ -9,10 +9,6 @@ ramp of U64 that starts at 0. In the host you will see the ramp skip values depe
 requested decimation. The minimum value decimation value is 2 which yields u64s at 200/2 MHz
 for a total of 8 bytes at 100 MHz or 800 MB/s.
 
-The codes also has a U64 LSFR that has not been tied to the **target to host** FIFO and
-may not trully implement an LSFR :). The LabVIEW FGPA implements a [Fibonacci LSFR](https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Fibonacci_LFSRs) but  has not been validated. For now the code only
-streams a sequential ramp. 
-
 ### Things to remember:
 * Reserving the space in disk for the async tdms requires admin priviliges. Make sure you launch
 LabVIEW accordingly.
@@ -31,3 +27,11 @@ LabVIEW accordingly.
 
 ### References
 * Drivers can be found at: http://www.ni.com/downloads/drivers/
+
+### Notes
+The codes has a U64 LSFR that has not been tied to the **target to host** FIFO and
+may not trully implement an LSFR :). The LabVIEW FGPA implements a [Fibonacci LSFR](https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Fibonacci_LFSRs) but  has not been validated. For now the code only
+streams a sequential ramp. 
+
+## License
+[MIT License](https://github.com/NISystemsEngineering/USRP-RIO-Streaming/blob/master/LICENSE.md)
