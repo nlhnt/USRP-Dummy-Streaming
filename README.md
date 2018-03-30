@@ -1,4 +1,4 @@
-# USRP RIO Streaming
+## USRP RIO Streaming
 
 Example demostrating how to stream dummy data from the USRP RIO FPGA to the host. The example
 was developed using the receiver of a USRP-2945R. Host and FPGA were carefully simplified to
@@ -29,5 +29,5 @@ LabVIEW accordingly.
 	- NI-USRP
 	- NIFlexRIO
 
-### Other Notes
+### References
 * Drivers can be found at: http://www.ni.com/downloads/drivers/
