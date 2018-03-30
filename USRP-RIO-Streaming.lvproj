@@ -145,13 +145,1949 @@
 			<Item Name="USRP Dummy DMA to Memory (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA to Memory (Host).vi"/>
 			<Item Name="USRP Dummy DMA Zero Copy (Host).vi" Type="VI" URL="../Host/USRP Dummy DMA Zero Copy (Host).vi"/>
 		</Item>
-		<Item Name="Resources" Type="Folder">
-			<Item Name="USRP Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Rx Streaming (Host).vi"/>
-			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Host/USRP Stream to Disk Queues USRP (Host).vi"/>
-			<Item Name="USRP Streaming to Memory FlexRIO (Host).vi" Type="VI" URL="../Host/USRP Streaming to Memory FlexRIO (Host).vi"/>
-			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Host/USRP Throughput Streaming - To Disk (Host).vi"/>
-			<Item Name="USRP Tx and Rx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx and Rx Streaming (Host).vi"/>
-			<Item Name="USRP Tx Streaming (Host).vi" Type="VI" URL="../Host/USRP Tx Streaming (Host).vi"/>
+		<Item Name="Research" Type="Folder">
+			<Item Name="USRP Rx Streaming (Host).vi" Type="VI" URL="../Research/USRP Rx Streaming (Host).vi"/>
+			<Item Name="USRP Stream to Disk Queues USRP (Host).vi" Type="VI" URL="../Research/USRP Stream to Disk Queues USRP (Host).vi"/>
+			<Item Name="USRP Streaming to Memory FlexRIO (Host).vi" Type="VI" URL="../Research/USRP Streaming to Memory FlexRIO (Host).vi"/>
+			<Item Name="USRP Throughput Streaming - To Disk (Host).vi" Type="VI" URL="../Research/USRP Throughput Streaming - To Disk (Host).vi"/>
+			<Item Name="USRP Tx and Rx Streaming (Host).vi" Type="VI" URL="../Research/USRP Tx and Rx Streaming (Host).vi"/>
+			<Item Name="USRP Tx Streaming (Host).vi" Type="VI" URL="../Research/USRP Tx Streaming (Host).vi"/>
+		</Item>
+		<Item Name="Dummy DMA" Type="FPGA Target">
+			<Property Name="AutoRun" Type="Bool">false</Property>
+			<Property Name="configString.guid" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=bool{08FDEABD-1B64-4FD4-A765-692FC225102A}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16{09F4A4BC-63B2-4A54-A994-84AA620B24A3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{0B342FE0-D137-417F-A682-C371FF317197}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{0F3F01F6-B654-4D33-8862-79346C02072B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{118B7012-2FF6-4D87-B040-2886486BA3A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{122E1808-41AB-46F7-A147-70A3D22109A7}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=bool{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=bool{1702095F-70F0-4387-8E74-EBB415BF79C1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=bool{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=bool{200293A7-6658-4FFF-A489-5A53033BD5C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{20D9B010-B800-4F43-88FF-C263C546E2F3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2193A9DB-8934-450A-AD03-17AB78E2A567}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=bool{21E000C7-BEB2-4008-86E7-756A6ABD913E}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=bool{234D33EF-6415-4E72-B5C8-A19C289DC208}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2373FA1E-A451-4E89-8267-96C8526388CC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{2573839B-363D-4105-857B-B4D3DFBE1CD1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{280BC036-D6ED-473E-AA92-B8D20A23CCEF}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=bool{28BF8344-E147-46E2-B161-56971B7E9375}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8{2A8B4450-2262-4D50-AA34-77E14F5C882C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=bool{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{2DF4B012-130B-49C4-83D5-877382BC93A4}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{2E067F3B-C17B-488C-900D-49A838D7A1A0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=bool{30816DE5-90F7-45B5-92ED-4D0D018F4975}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16{33798355-74B8-46C4-9A3A-2DD9F73A75D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=bool{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=bool{3583EA81-38B8-41AC-9321-1CF5E8C17005}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=bool{3D76B4B2-0766-4519-942F-50FB2F96C920}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=bool{407383EA-A692-44CF-87E2-B1AB707CD2FA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=bool{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{450A5CC8-918D-4D62-9728-BB915843DF93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{4DF50022-359E-47EB-969C-211A8F639261}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=bool{4F9AEAED-5C65-497C-8734-3EF5E22F718D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{5533E7A5-FE20-4810-A667-2566E109341C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{5DE7835A-9740-4603-8084-A59A5C99D3DE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{5DFECC16-518B-4EF3-BE89-60C03671E16B}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=bool{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=bool{5FC738E2-5024-4441-9A02-52DC9FABBB80}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8{62743028-B1BC-426A-8500-27C6E872BE3C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=bool{62BD3A2D-4934-4268-85BF-79165A4A80BE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{662FF559-0776-4FC8-8C57-8877535959D6}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=bool{67557387-6467-41E9-BFDA-76301F45BF6E}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{68E23843-4040-4981-B4FD-672458E36518}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=bool{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=bool{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{7AFE976A-F93A-4BE8-AA87-820B4839B18F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{7E0F04BC-3096-4A96-B9F6-597E2C07680F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{804A876B-4131-40A4-A3D4-1ED456190E75}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=bool{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{896C13BB-8215-487E-AE60-64F7AB30DA28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=bool{8D6F4009-C5AE-4525-B155-62429B531669}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=bool{8EB0B01F-D33A-4B02-92ED-85991C028450}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=bool{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{92DCDDC6-462A-40C3-BA23-22483CFECAF1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{9EACC95C-F751-4F9B-B0C1-853D2E86637F}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=bool{A0397502-56B9-434D-BD94-95CDC122A57E}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8{A92A45C9-0636-4935-AF5A-C93A3781B3EB}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=bool{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{B1FC76CA-8895-4504-A2D3-688796960052}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=bool{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=bool{BF31DB52-0653-4664-8BA5-A88C8F091EF6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{C01F3804-B840-49BD-8C60-1221CD076506}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=bool{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{C1670552-0C3D-411A-B9A1-6943695973D5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=bool{C331BEDC-691D-4633-80AC-5791E9506A54}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C88ECC99-2207-491B-A2F0-B2BD963BF355}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64{CAC54BAC-5DED-4380-8E47-F8618B0C800C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{CEE51689-365F-4DF6-91E7-DEB9E0905707}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32{D1E0B904-B8D3-447B-9F17-C889D8C595DD}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=bool{D24193DE-18B7-4685-AE85-02E481840CE4}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=bool{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{D88C555C-7135-4CE5-AAD7-401DF0A88600}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=bool{DF714A68-B96A-490B-8047-B0C2AC9493D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=bool{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=bool{F1A38483-2AB4-42C6-8840-A342F74CF6EE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{F289C2EA-14DC-464B-9656-E9AA640DD585}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=bool{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{F9100780-7555-4031-9BBC-B040873ACBC8}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=bool{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{FAE10E04-4AA2-461E-BC39-27FB873A46E5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=bool{FCA43A2D-9415-468F-8E53-BDF141864CFB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolUSRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+			<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;ADC Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=boolADC Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=boolClock Chip LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=boolDAC FIFO ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=boolData Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock x2ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;Data ClockResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;DRAM ReadyNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=boolFIFO"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"Global Control AcknowledgeNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=boolGlobal Control AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16Global Control Cycle EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32Global Control Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32Global Control ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8Global Control StrobeArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Write EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=boolGPS Data InNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8GPS Data Out Ready For OutputNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=boolGPS Data Out ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=boolGPS Data OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8GPS LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=boolGPS NMEA Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS NMEA ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=boolGPS NMEANumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8GPS PPSNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=boolLED/GPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/LINKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/PPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/REFArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/RF 1/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 1/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlPPS Trig InNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=boolPPS Trig OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=boolReference ClockNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=boolreg.host instruction fifo 0"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"RF 0/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 0/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=boolRF 0/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64RF 0/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=boolRF 0/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=boolRF 0/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=boolRF 0/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16RF 0/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16RF 0/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 1/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=boolRF 1/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64RF 1/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=boolRF 1/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=boolRF 1/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=boolRF 1/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16RF 1/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16RF 1/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF Control Command ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=boolrx 0.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 1.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 2.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 3.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 0.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 1.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+			<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
+			<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA/USRP Dummy (FPGA).vi</Property>
+			<Property Name="Resource Name" Type="Str"></Property>
+			<Property Name="Target Class" Type="Str">USRP 294xR; 295xR 200 MSps</Property>
+			<Property Name="Top-Level Timing Source" Type="Str">40 MHz Onboard Clock</Property>
+			<Property Name="Top-Level Timing Source Is Default" Type="Bool">true</Property>
+			<Item Name="Radio Interface" Type="Folder">
+				<Item Name="RF 0" Type="Folder">
+					<Item Name="Rx" Type="Folder">
+						<Item Name="RF 0/Rx/I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{68E23843-4040-4981-B4FD-672458E36518}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{08FDEABD-1B64-4FD4-A765-692FC225102A}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Enable" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{F289C2EA-14DC-464B-9656-E9AA640DD585}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Swap IQ" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{122E1808-41AB-46F7-A147-70A3D22109A7}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Negate I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{FCA43A2D-9415-468F-8E53-BDF141864CFB}</Property>
+						</Item>
+						<Item Name="RF 0/Rx/Negate Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}</Property>
+						</Item>
+					</Item>
+					<Item Name="Tx" Type="Folder">
+						<Item Name="RF 0/Tx/I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}</Property>
+						</Item>
+						<Item Name="RF 0/Tx/Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{450A5CC8-918D-4D62-9728-BB915843DF93}</Property>
+						</Item>
+						<Item Name="RF 0/Tx/Enable" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{BF31DB52-0653-4664-8BA5-A88C8F091EF6}</Property>
+						</Item>
+						<Item Name="RF 0/Tx/Swap IQ" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{92DCDDC6-462A-40C3-BA23-22483CFECAF1}</Property>
+						</Item>
+						<Item Name="RF 0/Tx/Negate I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}</Property>
+						</Item>
+						<Item Name="RF 0/Tx/Negate Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{7AFE976A-F93A-4BE8-AA87-820B4839B18F}</Property>
+						</Item>
+					</Item>
+					<Item Name="Control" Type="Folder">
+						<Item Name="RF 0/Control Data In" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Data In</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{F1A38483-2AB4-42C6-8840-A342F74CF6EE}</Property>
+						</Item>
+						<Item Name="RF 0/Control Last" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Last</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}</Property>
+						</Item>
+						<Item Name="RF 0/Control Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{1702095F-70F0-4387-8E74-EBB415BF79C1}</Property>
+						</Item>
+						<Item Name="RF 0/Control Ready for Input" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{4DF50022-359E-47EB-969C-211A8F639261}</Property>
+						</Item>
+						<Item Name="RF 0/Response Data Out" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Data Out</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{C88ECC99-2207-491B-A2F0-B2BD963BF355}</Property>
+						</Item>
+						<Item Name="RF 0/Response Last" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Last</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{2E067F3B-C17B-488C-900D-49A838D7A1A0}</Property>
+						</Item>
+						<Item Name="RF 0/Response Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{9EACC95C-F751-4F9B-B0C1-853D2E86637F}</Property>
+						</Item>
+						<Item Name="RF 0/Response Ready for Output" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{0F3F01F6-B654-4D33-8862-79346C02072B}</Property>
+						</Item>
+					</Item>
+				</Item>
+				<Item Name="RF 1" Type="Folder">
+					<Item Name="Rx" Type="Folder">
+						<Item Name="RF 1/Rx/I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{30816DE5-90F7-45B5-92ED-4D0D018F4975}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{D24193DE-18B7-4685-AE85-02E481840CE4}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Enable" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{5533E7A5-FE20-4810-A667-2566E109341C}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{D1E0B904-B8D3-447B-9F17-C889D8C595DD}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Swap IQ" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Negate I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{3583EA81-38B8-41AC-9321-1CF5E8C17005}</Property>
+						</Item>
+						<Item Name="RF 1/Rx/Negate Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}</Property>
+						</Item>
+					</Item>
+					<Item Name="Tx" Type="Folder">
+						<Item Name="RF 1/Tx/I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{CAC54BAC-5DED-4380-8E47-F8618B0C800C}</Property>
+						</Item>
+						<Item Name="RF 1/Tx/Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}</Property>
+						</Item>
+						<Item Name="RF 1/Tx/Enable" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{7E0F04BC-3096-4A96-B9F6-597E2C07680F}</Property>
+						</Item>
+						<Item Name="RF 1/Tx/Swap IQ" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}</Property>
+						</Item>
+						<Item Name="RF 1/Tx/Negate I" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{09F4A4BC-63B2-4A54-A994-84AA620B24A3}</Property>
+						</Item>
+						<Item Name="RF 1/Tx/Negate Q" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{5DE7835A-9740-4603-8084-A59A5C99D3DE}</Property>
+						</Item>
+					</Item>
+					<Item Name="Control" Type="Folder">
+						<Item Name="RF 1/Control Data In" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Data In</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{2573839B-363D-4105-857B-B4D3DFBE1CD1}</Property>
+						</Item>
+						<Item Name="RF 1/Control Last" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Last</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{62BD3A2D-4934-4268-85BF-79165A4A80BE}</Property>
+						</Item>
+						<Item Name="RF 1/Control Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}</Property>
+						</Item>
+						<Item Name="RF 1/Control Ready for Input" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}</Property>
+						</Item>
+						<Item Name="RF 1/Response Data Out" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Data Out</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{896C13BB-8215-487E-AE60-64F7AB30DA28}</Property>
+						</Item>
+						<Item Name="RF 1/Response Last" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Last</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{C01F3804-B840-49BD-8C60-1221CD076506}</Property>
+						</Item>
+						<Item Name="RF 1/Response Data Valid" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Data Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{8EB0B01F-D33A-4B02-92ED-85991C028450}</Property>
+						</Item>
+						<Item Name="RF 1/Response Ready for Output" Type="Elemental IO">
+							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+							<Property Name="FPGA.PersistentID" Type="Str">{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}</Property>
+						</Item>
+					</Item>
+				</Item>
+				<Item Name="RF Control Command Reset" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/RF Control Command Reset</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}</Property>
+				</Item>
+				<Item Name="Data Clock PLL Reset" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/Data Clock PLL Reset</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}</Property>
+				</Item>
+				<Item Name="Data Clock PLL Locked" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/Data Clock PLL Locked</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5DFECC16-518B-4EF3-BE89-60C03671E16B}</Property>
+				</Item>
+				<Item Name="DAC FIFO Reset" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/DAC FIFO Reset</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{804A876B-4131-40A4-A3D4-1ED456190E75}</Property>
+				</Item>
+				<Item Name="ADC Clock PLL Reset" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/ADC Clock PLL Reset</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{118B7012-2FF6-4D87-B040-2886486BA3A1}</Property>
+				</Item>
+				<Item Name="ADC Clock PLL Locked" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Radio Interface/ADC Clock PLL Locked</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{2A8B4450-2262-4D50-AA34-77E14F5C882C}</Property>
+				</Item>
+			</Item>
+			<Item Name="Board Interface" Type="Folder">
+				<Item Name="DRAM Ready" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/DRAM Ready</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{2193A9DB-8934-450A-AD03-17AB78E2A567}</Property>
+				</Item>
+				<Item Name="Global Control Data In" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Data In</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}</Property>
+				</Item>
+				<Item Name="Global Control Data Out" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Data Out</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{CEE51689-365F-4DF6-91E7-DEB9E0905707}</Property>
+				</Item>
+				<Item Name="Global Control Address" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Address</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}</Property>
+				</Item>
+				<Item Name="Global Control Select" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Select</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{28BF8344-E147-46E2-B161-56971B7E9375}</Property>
+				</Item>
+				<Item Name="Global Control Write Enable" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Write Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}</Property>
+				</Item>
+				<Item Name="Global Control Cycle Enable" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Cycle Enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}</Property>
+				</Item>
+				<Item Name="Global Control Strobe" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Strobe</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}</Property>
+				</Item>
+				<Item Name="Global Control Acknowledge" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Acknowledge</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{21E000C7-BEB2-4008-86E7-756A6ABD913E}</Property>
+				</Item>
+				<Item Name="Global Control Reset" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Global Control Reset</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}</Property>
+				</Item>
+				<Item Name="Clock Chip Locked" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Clock Chip Locked</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}</Property>
+				</Item>
+				<Item Name="Reference Clock" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/Reference Clock</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{62743028-B1BC-426A-8500-27C6E872BE3C}</Property>
+				</Item>
+				<Item Name="GPS Locked" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Locked</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{662FF559-0776-4FC8-8C57-8877535959D6}</Property>
+				</Item>
+				<Item Name="GPS PPS" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS PPS</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{280BC036-D6ED-473E-AA92-B8D20A23CCEF}</Property>
+				</Item>
+				<Item Name="GPS Data In" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data In</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{A0397502-56B9-434D-BD94-95CDC122A57E}</Property>
+				</Item>
+				<Item Name="GPS Data In Valid" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data In Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}</Property>
+				</Item>
+				<Item Name="GPS Data In Ready For Input" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data In Ready For Input</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}</Property>
+				</Item>
+				<Item Name="GPS Data Out" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data Out</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{4F9AEAED-5C65-497C-8734-3EF5E22F718D}</Property>
+				</Item>
+				<Item Name="GPS Data Out Valid" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data Out Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}</Property>
+				</Item>
+				<Item Name="GPS Data Out Ready For Output" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS Data Out Ready For Output</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{A92A45C9-0636-4935-AF5A-C93A3781B3EB}</Property>
+				</Item>
+				<Item Name="GPS NMEA" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS NMEA</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5FC738E2-5024-4441-9A02-52DC9FABBB80}</Property>
+				</Item>
+				<Item Name="GPS NMEA Valid" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS NMEA Valid</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{B1FC76CA-8895-4504-A2D3-688796960052}</Property>
+				</Item>
+				<Item Name="GPS NMEA Ready For Input" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/GPS NMEA Ready For Input</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{200293A7-6658-4FFF-A489-5A53033BD5C6}</Property>
+				</Item>
+				<Item Name="PPS Trig In" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/PPS Trig In</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}</Property>
+				</Item>
+				<Item Name="PPS Trig Out" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/Board Interface/PPS Trig Out</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}</Property>
+				</Item>
+			</Item>
+			<Item Name="LEDs" Type="Folder">
+				<Item Name="LED/RF 0/TX1 RX1" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/RF 0\/TX1 RX1</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}</Property>
+				</Item>
+				<Item Name="LED/RF 0/RX2" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/RF 0\/RX2</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}</Property>
+				</Item>
+				<Item Name="LED/REF" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/REF</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}</Property>
+				</Item>
+				<Item Name="LED/PPS" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/PPS</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{234D33EF-6415-4E72-B5C8-A19C289DC208}</Property>
+				</Item>
+				<Item Name="LED/GPS" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/GPS</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{20D9B010-B800-4F43-88FF-C263C546E2F3}</Property>
+				</Item>
+				<Item Name="LED/LINK" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/LINK</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{2DF4B012-130B-49C4-83D5-877382BC93A4}</Property>
+				</Item>
+				<Item Name="LED/RF 1/TX1 RX1" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/RF 1\/TX1 RX1</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}</Property>
+				</Item>
+				<Item Name="LED/RF 1/RX2" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/LEDs/LED\/RF 1\/RX2</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}</Property>
+				</Item>
+			</Item>
+			<Item Name="AUX I/O" Type="Folder">
+				<Item Name="AUX I/O 0" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 0</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3D76B4B2-0766-4519-942F-50FB2F96C920}</Property>
+				</Item>
+				<Item Name="AUX I/O 1" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 1</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{8D6F4009-C5AE-4525-B155-62429B531669}</Property>
+				</Item>
+				<Item Name="AUX I/O 2" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 2</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}</Property>
+				</Item>
+				<Item Name="AUX I/O 3" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 3</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{DF714A68-B96A-490B-8047-B0C2AC9493D9}</Property>
+				</Item>
+				<Item Name="AUX I/O 4" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 4</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{D88C555C-7135-4CE5-AAD7-401DF0A88600}</Property>
+				</Item>
+				<Item Name="AUX I/O 5" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 5</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{33798355-74B8-46C4-9A3A-2DD9F73A75D9}</Property>
+				</Item>
+				<Item Name="AUX I/O 6" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 6</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}</Property>
+				</Item>
+				<Item Name="AUX I/O 7" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 7</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{407383EA-A692-44CF-87E2-B1AB707CD2FA}</Property>
+				</Item>
+				<Item Name="AUX I/O 8" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 8</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{F9100780-7555-4031-9BBC-B040873ACBC8}</Property>
+				</Item>
+				<Item Name="AUX I/O 9" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 9</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{C1670552-0C3D-411A-B9A1-6943695973D5}</Property>
+				</Item>
+				<Item Name="AUX I/O 10" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 10</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}</Property>
+				</Item>
+				<Item Name="AUX I/O 11" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="ArbitrationForOutputEnable">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputEnable">
+   <Value>1</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>Auto</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/AUX I\/O/AUX I\/O 11</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{FAE10E04-4AA2-461E-BC39-27FB873A46E5}</Property>
+				</Item>
+			</Item>
+			<Item Name="FIFOs" Type="Folder">
+				<Property Name="NI.SortType" Type="Int">0</Property>
+				<Item Name="reg.host instruction fifo 0" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">8</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Type" Type="UInt">1</Property>
+					<Property Name="Type Descriptor" Type="Str">100080000000000100094008000355363400010000000000000000000000000000</Property>
+				</Item>
+				<Item Name="rx 0.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Type" Type="UInt">2</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="rx 1.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{C331BEDC-691D-4633-80AC-5791E9506A54}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Type" Type="UInt">2</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="rx 2.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">15</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{67557387-6467-41E9-BFDA-76301F45BF6E}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1</Property>
+					<Property Name="Type" Type="UInt">2</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="rx 3.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">15</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1</Property>
+					<Property Name="Type" Type="UInt">2</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="tx 0.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0B342FE0-D137-417F-A682-C371FF317197}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Type" Type="UInt">1</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+				<Item Name="tx 1.host fifo" Type="FPGA FIFO">
+					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
+					<Property Name="Arbitration for Read" Type="UInt">1</Property>
+					<Property Name="Arbitration for Write" Type="UInt">1</Property>
+					<Property Name="Control Logic" Type="UInt">0</Property>
+					<Property Name="Data Type" Type="UInt">7</Property>
+					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+					<Property Name="fifo.configured" Type="Bool">true</Property>
+					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+					<Property Name="fifo.valid" Type="Bool">true</Property>
+					<Property Name="fifo.version" Type="Int">12</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{2373FA1E-A451-4E89-8267-96C8526388CC}</Property>
+					<Property Name="Local" Type="Bool">false</Property>
+					<Property Name="Memory Type" Type="UInt">2</Property>
+					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
+					<Property Name="Type" Type="UInt">1</Property>
+					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
+				</Item>
+			</Item>
+			<Item Name="40 MHz Onboard Clock" Type="FPGA Base Clock">
+				<Property Name="FPGA.PersistentID" Type="Str">{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RioClk40</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">40000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">40000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">40000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">40 MHz Onboard Clock</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RioClk40</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
+			</Item>
+			<Item Name="Data Clock" Type="FPGA Base Clock">
+				<Property Name="FPGA.PersistentID" Type="Str">{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RadioClk</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">200000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">200000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">200000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">Data Clock</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RadioClk</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
+			</Item>
+			<Item Name="Data Clock x2" Type="FPGA Base Clock">
+				<Property Name="FPGA.PersistentID" Type="Str">{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RadioClk2x</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">400000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">400000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">400000000</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">Data Clock x2</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RadioClk2x</Property>
+				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
+			</Item>
+			<Item Name="MGT Socket" Type="FPGA Component Level IP">
+				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
+				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
+				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">MGT Socket</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.SortType" Type="Int">3</Property>
+			</Item>
+			<Item Name="USRPRIO-DRAMTypeB-Bank0" Type="FPGA Component Level IP">
+				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
+				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
+				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">USRPRIO-DRAMTypeB-Bank0</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.SortType" Type="Int">3</Property>
+			</Item>
+			<Item Name="FIFO" Type="FPGA FIFO">
+				<Property Name="Actual Number of Elements" Type="UInt">2047</Property>
+				<Property Name="Arbitration for Read" Type="UInt">1</Property>
+				<Property Name="Arbitration for Write" Type="UInt">1</Property>
+				<Property Name="Control Logic" Type="UInt">0</Property>
+				<Property Name="Data Type" Type="UInt">8</Property>
+				<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
+				<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+				<Property Name="fifo.configured" Type="Bool">true</Property>
+				<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
+				<Property Name="fifo.valid" Type="Bool">true</Property>
+				<Property Name="fifo.version" Type="Int">12</Property>
+				<Property Name="FPGA.PersistentID" Type="Str">{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}</Property>
+				<Property Name="Local" Type="Bool">false</Property>
+				<Property Name="Memory Type" Type="UInt">2</Property>
+				<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
+				<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
+				<Property Name="Requested Number of Elements" Type="UInt">2047</Property>
+				<Property Name="Type" Type="UInt">2</Property>
+				<Property Name="Type Descriptor" Type="Str">100080000000000100094008000355363400010000000000000000000000000000</Property>
+			</Item>
+			<Item Name="IP Builder" Type="IP Builder Target">
+				<Item Name="Dependencies" Type="Dependencies"/>
+				<Item Name="Build Specifications" Type="Build"/>
+			</Item>
+			<Item Name="USRP Dummy (FPGA).vi" Type="VI" URL="../FPGA/USRP Dummy (FPGA).vi">
+				<Property Name="BuildSpec" Type="Str">{7B8FDB6E-6E8A-4BDC-8C02-35AE45139EA8}</Property>
+				<Property Name="configString.guid" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=bool{08FDEABD-1B64-4FD4-A765-692FC225102A}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16{09F4A4BC-63B2-4A54-A994-84AA620B24A3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{0B342FE0-D137-417F-A682-C371FF317197}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{0F3F01F6-B654-4D33-8862-79346C02072B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{118B7012-2FF6-4D87-B040-2886486BA3A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{122E1808-41AB-46F7-A147-70A3D22109A7}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=bool{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=bool{1702095F-70F0-4387-8E74-EBB415BF79C1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=bool{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=bool{200293A7-6658-4FFF-A489-5A53033BD5C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{20D9B010-B800-4F43-88FF-C263C546E2F3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2193A9DB-8934-450A-AD03-17AB78E2A567}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=bool{21E000C7-BEB2-4008-86E7-756A6ABD913E}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=bool{234D33EF-6415-4E72-B5C8-A19C289DC208}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2373FA1E-A451-4E89-8267-96C8526388CC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{2573839B-363D-4105-857B-B4D3DFBE1CD1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{280BC036-D6ED-473E-AA92-B8D20A23CCEF}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=bool{28BF8344-E147-46E2-B161-56971B7E9375}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8{2A8B4450-2262-4D50-AA34-77E14F5C882C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=bool{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{2DF4B012-130B-49C4-83D5-877382BC93A4}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{2E067F3B-C17B-488C-900D-49A838D7A1A0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=bool{30816DE5-90F7-45B5-92ED-4D0D018F4975}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16{33798355-74B8-46C4-9A3A-2DD9F73A75D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=bool{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=bool{3583EA81-38B8-41AC-9321-1CF5E8C17005}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=bool{3D76B4B2-0766-4519-942F-50FB2F96C920}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=bool{407383EA-A692-44CF-87E2-B1AB707CD2FA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=bool{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{450A5CC8-918D-4D62-9728-BB915843DF93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{4DF50022-359E-47EB-969C-211A8F639261}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=bool{4F9AEAED-5C65-497C-8734-3EF5E22F718D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{5533E7A5-FE20-4810-A667-2566E109341C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{5DE7835A-9740-4603-8084-A59A5C99D3DE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{5DFECC16-518B-4EF3-BE89-60C03671E16B}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=bool{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=bool{5FC738E2-5024-4441-9A02-52DC9FABBB80}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8{62743028-B1BC-426A-8500-27C6E872BE3C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=bool{62BD3A2D-4934-4268-85BF-79165A4A80BE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{662FF559-0776-4FC8-8C57-8877535959D6}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=bool{67557387-6467-41E9-BFDA-76301F45BF6E}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{68E23843-4040-4981-B4FD-672458E36518}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=bool{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=bool{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{7AFE976A-F93A-4BE8-AA87-820B4839B18F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{7E0F04BC-3096-4A96-B9F6-597E2C07680F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{804A876B-4131-40A4-A3D4-1ED456190E75}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=bool{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{896C13BB-8215-487E-AE60-64F7AB30DA28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=bool{8D6F4009-C5AE-4525-B155-62429B531669}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=bool{8EB0B01F-D33A-4B02-92ED-85991C028450}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=bool{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{92DCDDC6-462A-40C3-BA23-22483CFECAF1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{9EACC95C-F751-4F9B-B0C1-853D2E86637F}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=bool{A0397502-56B9-434D-BD94-95CDC122A57E}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8{A92A45C9-0636-4935-AF5A-C93A3781B3EB}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=bool{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{B1FC76CA-8895-4504-A2D3-688796960052}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=bool{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=bool{BF31DB52-0653-4664-8BA5-A88C8F091EF6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{C01F3804-B840-49BD-8C60-1221CD076506}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=bool{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{C1670552-0C3D-411A-B9A1-6943695973D5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=bool{C331BEDC-691D-4633-80AC-5791E9506A54}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C88ECC99-2207-491B-A2F0-B2BD963BF355}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64{CAC54BAC-5DED-4380-8E47-F8618B0C800C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{CEE51689-365F-4DF6-91E7-DEB9E0905707}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32{D1E0B904-B8D3-447B-9F17-C889D8C595DD}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=bool{D24193DE-18B7-4685-AE85-02E481840CE4}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=bool{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{D88C555C-7135-4CE5-AAD7-401DF0A88600}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=bool{DF714A68-B96A-490B-8047-B0C2AC9493D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=bool{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=bool{F1A38483-2AB4-42C6-8840-A342F74CF6EE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{F289C2EA-14DC-464B-9656-E9AA640DD585}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=bool{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{F9100780-7555-4031-9BBC-B040873ACBC8}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=bool{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{FAE10E04-4AA2-461E-BC39-27FB873A46E5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=bool{FCA43A2D-9415-468F-8E53-BDF141864CFB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolUSRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;ADC Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=boolADC Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=boolClock Chip LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=boolDAC FIFO ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=boolData Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock x2ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;Data ClockResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;DRAM ReadyNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=boolFIFO"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"Global Control AcknowledgeNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=boolGlobal Control AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16Global Control Cycle EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32Global Control Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32Global Control ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8Global Control StrobeArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Write EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=boolGPS Data InNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8GPS Data Out Ready For OutputNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=boolGPS Data Out ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=boolGPS Data OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8GPS LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=boolGPS NMEA Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS NMEA ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=boolGPS NMEANumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8GPS PPSNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=boolLED/GPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/LINKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/PPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/REFArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/RF 1/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 1/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlPPS Trig InNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=boolPPS Trig OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=boolReference ClockNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=boolreg.host instruction fifo 0"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"RF 0/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 0/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=boolRF 0/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64RF 0/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=boolRF 0/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=boolRF 0/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=boolRF 0/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16RF 0/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16RF 0/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 1/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=boolRF 1/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64RF 1/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=boolRF 1/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=boolRF 1/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=boolRF 1/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16RF 1/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16RF 1/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF Control Command ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=boolrx 0.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 1.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 2.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 3.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 0.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 1.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\jfernand\Desktop\USRP-RIO-Streaming\FPGA Bitfiles\USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
+			</Item>
+			<Item Name="Dependencies" Type="Dependencies">
+				<Item Name="instr.lib" Type="Folder">
+					<Item Name="niInstr Register Bus v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/Register Bus/v1/FPGA/niInstr Register Bus v1 FPGA.lvlib"/>
+					<Item Name="niInstr Basic Elements v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/niInstr Basic Elements v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Time v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/Shared/niUsrpRio Time v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Config v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/Shared/niUsrpRio Config v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Time v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/FPGA/niUsrpRio Time v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Config v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/FPGA/niUsrpRio Config v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio GPS v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/Shared/niUsrpRio GPS v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio GPS v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/FPGA/niUsrpRio GPS v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Synchronization v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/FPGA/niUsrpRio Synchronization v1 FPGA.lvlib"/>
+					<Item Name="niUsrpRio Synchronization v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/Shared/niUsrpRio Synchronization v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Instruction Synchronizer v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/Shared/niUsrpRio Instruction Synchronizer v1 Shared.lvlib"/>
+					<Item Name="niUsrpRio Instruction Synchronizer v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/FPGA/niUsrpRio Instruction Synchronizer v1 FPGA.lvlib"/>
+					<Item Name="DFlopBasicElements_C792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEPresetSimFiles/DFlopBasicElements_C792537791DE412E8810E138F5BC4696.dll"/>
+					<Item Name="xsimkC792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEPresetSimFiles/xsim.dir/DFlopBasicElements/xsimkC792537791DE412E8810E138F5BC4696.dll"/>
+					<Item Name="DFlopBasicElements_0B830B7E81994019B09E50CE7A175B36.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEResetSimFiles/DFlopBasicElements_0B830B7E81994019B09E50CE7A175B36.dll"/>
+					<Item Name="xsimk0B830B7E81994019B09E50CE7A175B36.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEResetSimFiles/xsim.dir/DFlopBasicElements/xsimk0B830B7E81994019B09E50CE7A175B36.dll"/>
+					<Item Name="DoubleSyncBasicElements_C792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DblSyncBEResetSimFiles/DoubleSyncBasicElements_C792537791DE412E8810E138F5BC4696.dll"/>
+					<Item Name="MaxFanoutFf_E0EDB5E65B8B49DD8E163F5688E824C1.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_4SimFiles/MaxFanoutFf_E0EDB5E65B8B49DD8E163F5688E824C1.dll"/>
+					<Item Name="xsimkE0EDB5E65B8B49DD8E163F5688E824C1.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_4SimFiles/xsim.dir/MaxFanoutFf/xsimkE0EDB5E65B8B49DD8E163F5688E824C1.dll"/>
+					<Item Name="MaxFanoutFf_6A315D12FBC743E4ACD121A1951E87AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_8SimFiles/MaxFanoutFf_6A315D12FBC743E4ACD121A1951E87AC.dll"/>
+					<Item Name="xsimk6A315D12FBC743E4ACD121A1951E87AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_8SimFiles/xsim.dir/MaxFanoutFf/xsimk6A315D12FBC743E4ACD121A1951E87AC.dll"/>
+					<Item Name="MaxFanoutFf_36915C3B0A964A738AD3121E87CF92C2.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_16SimFiles/MaxFanoutFf_36915C3B0A964A738AD3121E87CF92C2.dll"/>
+					<Item Name="xsimk36915C3B0A964A738AD3121E87CF92C2.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_16SimFiles/xsim.dir/MaxFanoutFf/xsimk36915C3B0A964A738AD3121E87CF92C2.dll"/>
+					<Item Name="MaxFanoutFf_417FC7712F0F4A3C95450BAF224B3F38.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_32SimFiles/MaxFanoutFf_417FC7712F0F4A3C95450BAF224B3F38.dll"/>
+					<Item Name="xsimk417FC7712F0F4A3C95450BAF224B3F38.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_32SimFiles/xsim.dir/MaxFanoutFf/xsimk417FC7712F0F4A3C95450BAF224B3F38.dll"/>
+					<Item Name="FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll"/>
+					<Item Name="xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/xsim.dir/FourInputGlitchFreeMuxBasicElements/xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll"/>
+					<Item Name="niInstr Overclocked TDC v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/niInstr Overclocked TDC v1 FPGA.lvlib"/>
+					<Item Name="xsimkED9697BB179F486B937DBFC6036BE2CD.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/xsim.dir/k7Tdc/xsimkED9697BB179F486B937DBFC6036BE2CD.dll"/>
+					<Item Name="Tdc_B556FC327CC64155836DD41C31E521AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/Tdc_B556FC327CC64155836DD41C31E521AC.dll"/>
+				</Item>
+				<Item Name="vi.lib" Type="Folder">
+					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
+					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
+				</Item>
+			</Item>
+			<Item Name="Build Specifications" Type="Build">
+				<Item Name="USRP Dummy (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
+					<Property Name="AllowEnableRemoval" Type="Bool">true</Property>
+					<Property Name="BuildSpecDecription" Type="Str"></Property>
+					<Property Name="BuildSpecName" Type="Str">USRP Dummy (FPGA)</Property>
+					<Property Name="Comp.BitfileName" Type="Str">USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
+					<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
+					<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
+					<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
+					<Property Name="Comp.Version.Build" Type="Int">0</Property>
+					<Property Name="Comp.Version.Fix" Type="Int">0</Property>
+					<Property Name="Comp.Version.Major" Type="Int">1</Property>
+					<Property Name="Comp.Version.Minor" Type="Int">0</Property>
+					<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
+					<Property Name="Comp.Vivado.EnableMultiThreading" Type="Bool">true</Property>
+					<Property Name="Comp.Vivado.OptDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.PhysOptDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.PlaceDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.RouteDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.RunPowerOpt" Type="Bool">false</Property>
+					<Property Name="Comp.Vivado.Strategy" Type="Str">Default</Property>
+					<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">balanced</Property>
+					<Property Name="Comp.Xilinx.MapEffort" Type="Str">default(noTiming)</Property>
+					<Property Name="Comp.Xilinx.ParEffort" Type="Str">standard</Property>
+					<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
+					<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
+					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
+					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
+					<Property Name="ProjectPath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/USRP-RIO-Streaming.lvproj</Property>
+					<Property Name="RelativePath" Type="Bool">true</Property>
+					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
+					<Property Name="SupportDownload" Type="Bool">true</Property>
+					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
+					<Property Name="TargetName" Type="Str">Dummy DMA</Property>
+					<Property Name="TopLevelVI" Type="Ref">/My Computer/Dummy DMA/USRP Dummy (FPGA).vi</Property>
+				</Item>
+			</Item>
 		</Item>
 		<Item Name="Streaming Xcvr" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
@@ -4254,1942 +6190,6 @@
 					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
 					<Property Name="TargetName" Type="Str">USRP 294xR; 295xR 200 MSps FlexRIO</Property>
 					<Property Name="TopLevelVI" Type="Ref">/My Computer/FlexRIO High Throughput/USRP Throughput Streaming (FPGA).vi</Property>
-				</Item>
-			</Item>
-		</Item>
-		<Item Name="Dummy DMA" Type="FPGA Target">
-			<Property Name="AutoRun" Type="Bool">false</Property>
-			<Property Name="configString.guid" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=bool{08FDEABD-1B64-4FD4-A765-692FC225102A}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16{09F4A4BC-63B2-4A54-A994-84AA620B24A3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{0B342FE0-D137-417F-A682-C371FF317197}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{0F3F01F6-B654-4D33-8862-79346C02072B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{118B7012-2FF6-4D87-B040-2886486BA3A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{122E1808-41AB-46F7-A147-70A3D22109A7}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=bool{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=bool{1702095F-70F0-4387-8E74-EBB415BF79C1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=bool{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=bool{200293A7-6658-4FFF-A489-5A53033BD5C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{20D9B010-B800-4F43-88FF-C263C546E2F3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2193A9DB-8934-450A-AD03-17AB78E2A567}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=bool{21E000C7-BEB2-4008-86E7-756A6ABD913E}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=bool{234D33EF-6415-4E72-B5C8-A19C289DC208}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2373FA1E-A451-4E89-8267-96C8526388CC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{2573839B-363D-4105-857B-B4D3DFBE1CD1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{280BC036-D6ED-473E-AA92-B8D20A23CCEF}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=bool{28BF8344-E147-46E2-B161-56971B7E9375}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8{2A8B4450-2262-4D50-AA34-77E14F5C882C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=bool{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{2DF4B012-130B-49C4-83D5-877382BC93A4}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{2E067F3B-C17B-488C-900D-49A838D7A1A0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=bool{30816DE5-90F7-45B5-92ED-4D0D018F4975}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16{33798355-74B8-46C4-9A3A-2DD9F73A75D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=bool{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=bool{3583EA81-38B8-41AC-9321-1CF5E8C17005}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=bool{3D76B4B2-0766-4519-942F-50FB2F96C920}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=bool{407383EA-A692-44CF-87E2-B1AB707CD2FA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=bool{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{450A5CC8-918D-4D62-9728-BB915843DF93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{4DF50022-359E-47EB-969C-211A8F639261}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=bool{4F9AEAED-5C65-497C-8734-3EF5E22F718D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{5533E7A5-FE20-4810-A667-2566E109341C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{5DE7835A-9740-4603-8084-A59A5C99D3DE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{5DFECC16-518B-4EF3-BE89-60C03671E16B}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=bool{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=bool{5FC738E2-5024-4441-9A02-52DC9FABBB80}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8{62743028-B1BC-426A-8500-27C6E872BE3C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=bool{62BD3A2D-4934-4268-85BF-79165A4A80BE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{662FF559-0776-4FC8-8C57-8877535959D6}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=bool{67557387-6467-41E9-BFDA-76301F45BF6E}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{68E23843-4040-4981-B4FD-672458E36518}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=bool{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=bool{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{7AFE976A-F93A-4BE8-AA87-820B4839B18F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{7E0F04BC-3096-4A96-B9F6-597E2C07680F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{804A876B-4131-40A4-A3D4-1ED456190E75}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=bool{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{896C13BB-8215-487E-AE60-64F7AB30DA28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=bool{8D6F4009-C5AE-4525-B155-62429B531669}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=bool{8EB0B01F-D33A-4B02-92ED-85991C028450}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=bool{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{92DCDDC6-462A-40C3-BA23-22483CFECAF1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{9EACC95C-F751-4F9B-B0C1-853D2E86637F}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=bool{A0397502-56B9-434D-BD94-95CDC122A57E}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8{A92A45C9-0636-4935-AF5A-C93A3781B3EB}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=bool{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{B1FC76CA-8895-4504-A2D3-688796960052}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=bool{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=bool{BF31DB52-0653-4664-8BA5-A88C8F091EF6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{C01F3804-B840-49BD-8C60-1221CD076506}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=bool{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{C1670552-0C3D-411A-B9A1-6943695973D5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=bool{C331BEDC-691D-4633-80AC-5791E9506A54}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C88ECC99-2207-491B-A2F0-B2BD963BF355}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64{CAC54BAC-5DED-4380-8E47-F8618B0C800C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{CEE51689-365F-4DF6-91E7-DEB9E0905707}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32{D1E0B904-B8D3-447B-9F17-C889D8C595DD}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=bool{D24193DE-18B7-4685-AE85-02E481840CE4}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=bool{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{D88C555C-7135-4CE5-AAD7-401DF0A88600}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=bool{DF714A68-B96A-490B-8047-B0C2AC9493D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=bool{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=bool{F1A38483-2AB4-42C6-8840-A342F74CF6EE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{F289C2EA-14DC-464B-9656-E9AA640DD585}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=bool{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{F9100780-7555-4031-9BBC-B040873ACBC8}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=bool{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{FAE10E04-4AA2-461E-BC39-27FB873A46E5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=bool{FCA43A2D-9415-468F-8E53-BDF141864CFB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolUSRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-			<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;ADC Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=boolADC Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=boolClock Chip LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=boolDAC FIFO ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=boolData Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock x2ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;Data ClockResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;DRAM ReadyNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=boolFIFO"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"Global Control AcknowledgeNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=boolGlobal Control AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16Global Control Cycle EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32Global Control Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32Global Control ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8Global Control StrobeArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Write EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=boolGPS Data InNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8GPS Data Out Ready For OutputNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=boolGPS Data Out ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=boolGPS Data OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8GPS LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=boolGPS NMEA Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS NMEA ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=boolGPS NMEANumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8GPS PPSNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=boolLED/GPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/LINKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/PPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/REFArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/RF 1/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 1/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlPPS Trig InNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=boolPPS Trig OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=boolReference ClockNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=boolreg.host instruction fifo 0"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"RF 0/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 0/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=boolRF 0/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64RF 0/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=boolRF 0/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=boolRF 0/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=boolRF 0/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16RF 0/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16RF 0/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 1/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=boolRF 1/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64RF 1/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=boolRF 1/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=boolRF 1/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=boolRF 1/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16RF 1/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16RF 1/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF Control Command ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=boolrx 0.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 1.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 2.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 3.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 0.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 1.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
-			<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
-			<Property Name="niFpga_TopLevelVIID" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA/USRP Dummy (FPGA).vi</Property>
-			<Property Name="Resource Name" Type="Str"></Property>
-			<Property Name="Target Class" Type="Str">USRP 294xR; 295xR 200 MSps</Property>
-			<Property Name="Top-Level Timing Source" Type="Str">40 MHz Onboard Clock</Property>
-			<Property Name="Top-Level Timing Source Is Default" Type="Bool">true</Property>
-			<Item Name="Radio Interface" Type="Folder">
-				<Item Name="RF 0" Type="Folder">
-					<Item Name="Rx" Type="Folder">
-						<Item Name="RF 0/Rx/I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{68E23843-4040-4981-B4FD-672458E36518}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{08FDEABD-1B64-4FD4-A765-692FC225102A}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Enable" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{F289C2EA-14DC-464B-9656-E9AA640DD585}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Swap IQ" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{122E1808-41AB-46F7-A147-70A3D22109A7}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Negate I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{FCA43A2D-9415-468F-8E53-BDF141864CFB}</Property>
-						</Item>
-						<Item Name="RF 0/Rx/Negate Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}</Property>
-						</Item>
-					</Item>
-					<Item Name="Tx" Type="Folder">
-						<Item Name="RF 0/Tx/I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}</Property>
-						</Item>
-						<Item Name="RF 0/Tx/Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{450A5CC8-918D-4D62-9728-BB915843DF93}</Property>
-						</Item>
-						<Item Name="RF 0/Tx/Enable" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{BF31DB52-0653-4664-8BA5-A88C8F091EF6}</Property>
-						</Item>
-						<Item Name="RF 0/Tx/Swap IQ" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{92DCDDC6-462A-40C3-BA23-22483CFECAF1}</Property>
-						</Item>
-						<Item Name="RF 0/Tx/Negate I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}</Property>
-						</Item>
-						<Item Name="RF 0/Tx/Negate Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{7AFE976A-F93A-4BE8-AA87-820B4839B18F}</Property>
-						</Item>
-					</Item>
-					<Item Name="Control" Type="Folder">
-						<Item Name="RF 0/Control Data In" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Data In</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{F1A38483-2AB4-42C6-8840-A342F74CF6EE}</Property>
-						</Item>
-						<Item Name="RF 0/Control Last" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Last</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}</Property>
-						</Item>
-						<Item Name="RF 0/Control Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{1702095F-70F0-4387-8E74-EBB415BF79C1}</Property>
-						</Item>
-						<Item Name="RF 0/Control Ready for Input" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{4DF50022-359E-47EB-969C-211A8F639261}</Property>
-						</Item>
-						<Item Name="RF 0/Response Data Out" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Data Out</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{C88ECC99-2207-491B-A2F0-B2BD963BF355}</Property>
-						</Item>
-						<Item Name="RF 0/Response Last" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Last</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{2E067F3B-C17B-488C-900D-49A838D7A1A0}</Property>
-						</Item>
-						<Item Name="RF 0/Response Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{9EACC95C-F751-4F9B-B0C1-853D2E86637F}</Property>
-						</Item>
-						<Item Name="RF 0/Response Ready for Output" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{0F3F01F6-B654-4D33-8862-79346C02072B}</Property>
-						</Item>
-					</Item>
-				</Item>
-				<Item Name="RF 1" Type="Folder">
-					<Item Name="Rx" Type="Folder">
-						<Item Name="RF 1/Rx/I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{30816DE5-90F7-45B5-92ED-4D0D018F4975}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{D24193DE-18B7-4685-AE85-02E481840CE4}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Enable" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{5533E7A5-FE20-4810-A667-2566E109341C}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{D1E0B904-B8D3-447B-9F17-C889D8C595DD}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Swap IQ" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Negate I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{3583EA81-38B8-41AC-9321-1CF5E8C17005}</Property>
-						</Item>
-						<Item Name="RF 1/Rx/Negate Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}</Property>
-						</Item>
-					</Item>
-					<Item Name="Tx" Type="Folder">
-						<Item Name="RF 1/Tx/I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{CAC54BAC-5DED-4380-8E47-F8618B0C800C}</Property>
-						</Item>
-						<Item Name="RF 1/Tx/Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}</Property>
-						</Item>
-						<Item Name="RF 1/Tx/Enable" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{7E0F04BC-3096-4A96-B9F6-597E2C07680F}</Property>
-						</Item>
-						<Item Name="RF 1/Tx/Swap IQ" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}</Property>
-						</Item>
-						<Item Name="RF 1/Tx/Negate I" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{09F4A4BC-63B2-4A54-A994-84AA620B24A3}</Property>
-						</Item>
-						<Item Name="RF 1/Tx/Negate Q" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{5DE7835A-9740-4603-8084-A59A5C99D3DE}</Property>
-						</Item>
-					</Item>
-					<Item Name="Control" Type="Folder">
-						<Item Name="RF 1/Control Data In" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Data In</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{2573839B-363D-4105-857B-B4D3DFBE1CD1}</Property>
-						</Item>
-						<Item Name="RF 1/Control Last" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Last</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{62BD3A2D-4934-4268-85BF-79165A4A80BE}</Property>
-						</Item>
-						<Item Name="RF 1/Control Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}</Property>
-						</Item>
-						<Item Name="RF 1/Control Ready for Input" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}</Property>
-						</Item>
-						<Item Name="RF 1/Response Data Out" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Data Out</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{896C13BB-8215-487E-AE60-64F7AB30DA28}</Property>
-						</Item>
-						<Item Name="RF 1/Response Last" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Last</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{C01F3804-B840-49BD-8C60-1221CD076506}</Property>
-						</Item>
-						<Item Name="RF 1/Response Data Valid" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Data Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{8EB0B01F-D33A-4B02-92ED-85991C028450}</Property>
-						</Item>
-						<Item Name="RF 1/Response Ready for Output" Type="Elemental IO">
-							<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-							<Property Name="FPGA.PersistentID" Type="Str">{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}</Property>
-						</Item>
-					</Item>
-				</Item>
-				<Item Name="RF Control Command Reset" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/RF Control Command Reset</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}</Property>
-				</Item>
-				<Item Name="Data Clock PLL Reset" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/Data Clock PLL Reset</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}</Property>
-				</Item>
-				<Item Name="Data Clock PLL Locked" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/Data Clock PLL Locked</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{5DFECC16-518B-4EF3-BE89-60C03671E16B}</Property>
-				</Item>
-				<Item Name="DAC FIFO Reset" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/DAC FIFO Reset</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{804A876B-4131-40A4-A3D4-1ED456190E75}</Property>
-				</Item>
-				<Item Name="ADC Clock PLL Reset" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/ADC Clock PLL Reset</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{118B7012-2FF6-4D87-B040-2886486BA3A1}</Property>
-				</Item>
-				<Item Name="ADC Clock PLL Locked" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Radio Interface/ADC Clock PLL Locked</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{2A8B4450-2262-4D50-AA34-77E14F5C882C}</Property>
-				</Item>
-			</Item>
-			<Item Name="Board Interface" Type="Folder">
-				<Item Name="DRAM Ready" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/DRAM Ready</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{2193A9DB-8934-450A-AD03-17AB78E2A567}</Property>
-				</Item>
-				<Item Name="Global Control Data In" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Data In</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}</Property>
-				</Item>
-				<Item Name="Global Control Data Out" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Data Out</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{CEE51689-365F-4DF6-91E7-DEB9E0905707}</Property>
-				</Item>
-				<Item Name="Global Control Address" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Address</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}</Property>
-				</Item>
-				<Item Name="Global Control Select" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Select</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{28BF8344-E147-46E2-B161-56971B7E9375}</Property>
-				</Item>
-				<Item Name="Global Control Write Enable" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Write Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}</Property>
-				</Item>
-				<Item Name="Global Control Cycle Enable" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Cycle Enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}</Property>
-				</Item>
-				<Item Name="Global Control Strobe" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Strobe</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}</Property>
-				</Item>
-				<Item Name="Global Control Acknowledge" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Acknowledge</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{21E000C7-BEB2-4008-86E7-756A6ABD913E}</Property>
-				</Item>
-				<Item Name="Global Control Reset" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Global Control Reset</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}</Property>
-				</Item>
-				<Item Name="Clock Chip Locked" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Clock Chip Locked</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}</Property>
-				</Item>
-				<Item Name="Reference Clock" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/Reference Clock</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{62743028-B1BC-426A-8500-27C6E872BE3C}</Property>
-				</Item>
-				<Item Name="GPS Locked" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Locked</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{662FF559-0776-4FC8-8C57-8877535959D6}</Property>
-				</Item>
-				<Item Name="GPS PPS" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS PPS</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{280BC036-D6ED-473E-AA92-B8D20A23CCEF}</Property>
-				</Item>
-				<Item Name="GPS Data In" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data In</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{A0397502-56B9-434D-BD94-95CDC122A57E}</Property>
-				</Item>
-				<Item Name="GPS Data In Valid" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data In Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}</Property>
-				</Item>
-				<Item Name="GPS Data In Ready For Input" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data In Ready For Input</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}</Property>
-				</Item>
-				<Item Name="GPS Data Out" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data Out</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{4F9AEAED-5C65-497C-8734-3EF5E22F718D}</Property>
-				</Item>
-				<Item Name="GPS Data Out Valid" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data Out Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}</Property>
-				</Item>
-				<Item Name="GPS Data Out Ready For Output" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS Data Out Ready For Output</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{A92A45C9-0636-4935-AF5A-C93A3781B3EB}</Property>
-				</Item>
-				<Item Name="GPS NMEA" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS NMEA</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{5FC738E2-5024-4441-9A02-52DC9FABBB80}</Property>
-				</Item>
-				<Item Name="GPS NMEA Valid" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS NMEA Valid</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{B1FC76CA-8895-4504-A2D3-688796960052}</Property>
-				</Item>
-				<Item Name="GPS NMEA Ready For Input" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/GPS NMEA Ready For Input</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{200293A7-6658-4FFF-A489-5A53033BD5C6}</Property>
-				</Item>
-				<Item Name="PPS Trig In" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/PPS Trig In</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}</Property>
-				</Item>
-				<Item Name="PPS Trig Out" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/Board Interface/PPS Trig Out</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}</Property>
-				</Item>
-			</Item>
-			<Item Name="LEDs" Type="Folder">
-				<Item Name="LED/RF 0/TX1 RX1" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/RF 0\/TX1 RX1</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}</Property>
-				</Item>
-				<Item Name="LED/RF 0/RX2" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/RF 0\/RX2</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}</Property>
-				</Item>
-				<Item Name="LED/REF" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/REF</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}</Property>
-				</Item>
-				<Item Name="LED/PPS" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/PPS</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{234D33EF-6415-4E72-B5C8-A19C289DC208}</Property>
-				</Item>
-				<Item Name="LED/GPS" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/GPS</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{20D9B010-B800-4F43-88FF-C263C546E2F3}</Property>
-				</Item>
-				<Item Name="LED/LINK" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/LINK</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{2DF4B012-130B-49C4-83D5-877382BC93A4}</Property>
-				</Item>
-				<Item Name="LED/RF 1/TX1 RX1" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/RF 1\/TX1 RX1</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}</Property>
-				</Item>
-				<Item Name="LED/RF 1/RX2" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/LEDs/LED\/RF 1\/RX2</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}</Property>
-				</Item>
-			</Item>
-			<Item Name="AUX I/O" Type="Folder">
-				<Item Name="AUX I/O 0" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 0</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{3D76B4B2-0766-4519-942F-50FB2F96C920}</Property>
-				</Item>
-				<Item Name="AUX I/O 1" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 1</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{8D6F4009-C5AE-4525-B155-62429B531669}</Property>
-				</Item>
-				<Item Name="AUX I/O 2" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 2</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}</Property>
-				</Item>
-				<Item Name="AUX I/O 3" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 3</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{DF714A68-B96A-490B-8047-B0C2AC9493D9}</Property>
-				</Item>
-				<Item Name="AUX I/O 4" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 4</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{D88C555C-7135-4CE5-AAD7-401DF0A88600}</Property>
-				</Item>
-				<Item Name="AUX I/O 5" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 5</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{33798355-74B8-46C4-9A3A-2DD9F73A75D9}</Property>
-				</Item>
-				<Item Name="AUX I/O 6" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 6</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}</Property>
-				</Item>
-				<Item Name="AUX I/O 7" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 7</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{407383EA-A692-44CF-87E2-B1AB707CD2FA}</Property>
-				</Item>
-				<Item Name="AUX I/O 8" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 8</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{F9100780-7555-4031-9BBC-B040873ACBC8}</Property>
-				</Item>
-				<Item Name="AUX I/O 9" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 9</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C1670552-0C3D-411A-B9A1-6943695973D5}</Property>
-				</Item>
-				<Item Name="AUX I/O 10" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 10</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}</Property>
-				</Item>
-				<Item Name="AUX I/O 11" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="ArbitrationForOutputEnable">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputEnable">
-   <Value>1</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>Auto</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/AUX I\/O/AUX I\/O 11</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{FAE10E04-4AA2-461E-BC39-27FB873A46E5}</Property>
-				</Item>
-			</Item>
-			<Item Name="FIFOs" Type="Folder">
-				<Property Name="NI.SortType" Type="Int">0</Property>
-				<Item Name="reg.host instruction fifo 0" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">8</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Type" Type="UInt">1</Property>
-					<Property Name="Type Descriptor" Type="Str">100080000000000100094008000355363400010000000000000000000000000000</Property>
-				</Item>
-				<Item Name="rx 0.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Type" Type="UInt">2</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-				<Item Name="rx 1.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C331BEDC-691D-4633-80AC-5791E9506A54}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Type" Type="UInt">2</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-				<Item Name="rx 2.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">15</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{67557387-6467-41E9-BFDA-76301F45BF6E}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1</Property>
-					<Property Name="Type" Type="UInt">2</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-				<Item Name="rx 3.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">15</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1</Property>
-					<Property Name="Type" Type="UInt">2</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-				<Item Name="tx 0.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0B342FE0-D137-417F-A682-C371FF317197}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Type" Type="UInt">1</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-				<Item Name="tx 1.host fifo" Type="FPGA FIFO">
-					<Property Name="Actual Number of Elements" Type="UInt">1029</Property>
-					<Property Name="Arbitration for Read" Type="UInt">1</Property>
-					<Property Name="Arbitration for Write" Type="UInt">1</Property>
-					<Property Name="Control Logic" Type="UInt">0</Property>
-					<Property Name="Data Type" Type="UInt">7</Property>
-					<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-					<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-					<Property Name="fifo.configured" Type="Bool">true</Property>
-					<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-					<Property Name="fifo.valid" Type="Bool">true</Property>
-					<Property Name="fifo.version" Type="Int">12</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{2373FA1E-A451-4E89-8267-96C8526388CC}</Property>
-					<Property Name="Local" Type="Bool">false</Property>
-					<Property Name="Memory Type" Type="UInt">2</Property>
-					<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-					<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-					<Property Name="Requested Number of Elements" Type="UInt">1023</Property>
-					<Property Name="Type" Type="UInt">1</Property>
-					<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
-				</Item>
-			</Item>
-			<Item Name="40 MHz Onboard Clock" Type="FPGA Base Clock">
-				<Property Name="FPGA.PersistentID" Type="Str">{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RioClk40</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">40000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">40000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">40000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">40 MHz Onboard Clock</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RioClk40</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
-			</Item>
-			<Item Name="Data Clock" Type="FPGA Base Clock">
-				<Property Name="FPGA.PersistentID" Type="Str">{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RadioClk</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">200000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">200000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">200000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">Data Clock</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RadioClk</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
-			</Item>
-			<Item Name="Data Clock x2" Type="FPGA Base Clock">
-				<Property Name="FPGA.PersistentID" Type="Str">{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig" Type="Str">ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.Accuracy" Type="Dbl">100</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ClockSignalName" Type="Str">RadioClk2x</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MaxFrequency" Type="Dbl">400000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinDutyCycle" Type="Dbl">50</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.MinFrequency" Type="Dbl">400000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.NominalFrequency" Type="Dbl">400000000</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.PeakPeriodJitter" Type="Dbl">250</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.ResourceName" Type="Str">Data Clock x2</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.SupportAndRequireRuntimeEnableDisable" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.TopSignalConnect" Type="Str">RadioClk2x</Property>
-				<Property Name="NI.LV.FPGA.BaseTSConfig.VariableFrequency" Type="Bool">false</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
-			</Item>
-			<Item Name="MGT Socket" Type="FPGA Component Level IP">
-				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
-				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
-				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">MGT Socket</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.SortType" Type="Int">3</Property>
-			</Item>
-			<Item Name="USRPRIO-DRAMTypeB-Bank0" Type="FPGA Component Level IP">
-				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
-				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
-				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">USRPRIO-DRAMTypeB-Bank0</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.SortType" Type="Int">3</Property>
-			</Item>
-			<Item Name="FIFO" Type="FPGA FIFO">
-				<Property Name="Actual Number of Elements" Type="UInt">2047</Property>
-				<Property Name="Arbitration for Read" Type="UInt">1</Property>
-				<Property Name="Arbitration for Write" Type="UInt">1</Property>
-				<Property Name="Control Logic" Type="UInt">0</Property>
-				<Property Name="Data Type" Type="UInt">8</Property>
-				<Property Name="Disable on Overflow/Underflow" Type="Bool">false</Property>
-				<Property Name="fifo.configuration" Type="Str">"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
-				<Property Name="fifo.configured" Type="Bool">true</Property>
-				<Property Name="fifo.projectItemValid" Type="Bool">true</Property>
-				<Property Name="fifo.valid" Type="Bool">true</Property>
-				<Property Name="fifo.version" Type="Int">12</Property>
-				<Property Name="FPGA.PersistentID" Type="Str">{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}</Property>
-				<Property Name="Local" Type="Bool">false</Property>
-				<Property Name="Memory Type" Type="UInt">2</Property>
-				<Property Name="Number Of Elements Per Read" Type="UInt">1</Property>
-				<Property Name="Number Of Elements Per Write" Type="UInt">1</Property>
-				<Property Name="Requested Number of Elements" Type="UInt">2047</Property>
-				<Property Name="Type" Type="UInt">2</Property>
-				<Property Name="Type Descriptor" Type="Str">100080000000000100094008000355363400010000000000000000000000000000</Property>
-			</Item>
-			<Item Name="IP Builder" Type="IP Builder Target">
-				<Item Name="Dependencies" Type="Dependencies"/>
-				<Item Name="Build Specifications" Type="Build"/>
-			</Item>
-			<Item Name="USRP Dummy (FPGA).vi" Type="VI" URL="../FPGA/USRP Dummy (FPGA).vi">
-				<Property Name="BuildSpec" Type="Str">{7B8FDB6E-6E8A-4BDC-8C02-35AE45139EA8}</Property>
-				<Property Name="configString.guid" Type="Str">{0134AC0E-3735-41A6-9E00-794BF3CA904B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{052A5D81-9800-4EC8-A23D-E45B98A1F2B2}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=bool{08FDEABD-1B64-4FD4-A765-692FC225102A}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16{09F4A4BC-63B2-4A54-A994-84AA620B24A3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{0B342FE0-D137-417F-A682-C371FF317197}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{0F1ECF8C-F5BE-4AB5-92D7-3A4485189817}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{0F3F01F6-B654-4D33-8862-79346C02072B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{0FCDB10E-85F5-43EE-A025-F89DA2FC8DDB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{118B7012-2FF6-4D87-B040-2886486BA3A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=bool{122E1808-41AB-46F7-A147-70A3D22109A7}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{124FE2CD-C8A9-4190-91F8-F8F2C30D9113}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=bool{13AAF7E3-D869-446A-B032-A1FF4CFE7DBA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=bool{1702095F-70F0-4387-8E74-EBB415BF79C1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{1B65B1A1-B348-4AD2-99C3-9D2B27FAE5B0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=bool{1BEEC9DB-C458-4D3A-918C-9D0E04E1BFCC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=bool{200293A7-6658-4FFF-A489-5A53033BD5C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{20D9B010-B800-4F43-88FF-C263C546E2F3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2193A9DB-8934-450A-AD03-17AB78E2A567}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=bool{21E000C7-BEB2-4008-86E7-756A6ABD913E}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=bool{234D33EF-6415-4E72-B5C8-A19C289DC208}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{2373FA1E-A451-4E89-8267-96C8526388CC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{2573839B-363D-4105-857B-B4D3DFBE1CD1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{280BC036-D6ED-473E-AA92-B8D20A23CCEF}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=bool{28BF8344-E147-46E2-B161-56971B7E9375}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8{2A8B4450-2262-4D50-AA34-77E14F5C882C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=bool{2AB64CA8-760A-433F-A727-7E5A0A49BC2B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{2DF4B012-130B-49C4-83D5-877382BC93A4}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{2E067F3B-C17B-488C-900D-49A838D7A1A0}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=bool{30816DE5-90F7-45B5-92ED-4D0D018F4975}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16{33798355-74B8-46C4-9A3A-2DD9F73A75D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=bool{3510F1C5-EFEE-4C60-86BA-4238CABDCE93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=bool{3583EA81-38B8-41AC-9321-1CF5E8C17005}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=bool{35C7C69D-98C5-4A02-8912-1EBA0EE43AC1}ResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{3BB44B62-BD23-4AD6-8F0C-8E12329311E0}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=bool{3CA31AC2-40A1-4011-9A0A-D54FCFC73A95}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=bool{3D76B4B2-0766-4519-942F-50FB2F96C920}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=bool{407383EA-A692-44CF-87E2-B1AB707CD2FA}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=bool{41D0B229-7ACA-4DE3-A3AB-2ADCE5C6108C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{450A5CC8-918D-4D62-9728-BB915843DF93}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{452B8FF8-4439-4B6E-BE57-5A0EF037CC10}"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{4794483C-E29A-4C8B-A3FD-2A57D0DFCEEB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{4DF50022-359E-47EB-969C-211A8F639261}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=bool{4F9AEAED-5C65-497C-8734-3EF5E22F718D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8{5087DE09-DF55-49F0-9A63-0E8AF4EA343A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16{5533E7A5-FE20-4810-A667-2566E109341C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{5D0CB5A3-E444-4E3D-B578-6A8411A5FF7B}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{5DE7835A-9740-4603-8084-A59A5C99D3DE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{5DFECC16-518B-4EF3-BE89-60C03671E16B}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=bool{5E3EFC94-61C5-4045-BAFA-A27C93A8A570}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=bool{5FC738E2-5024-4441-9A02-52DC9FABBB80}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8{62743028-B1BC-426A-8500-27C6E872BE3C}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=bool{62BD3A2D-4934-4268-85BF-79165A4A80BE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=bool{662FF559-0776-4FC8-8C57-8877535959D6}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=bool{67557387-6467-41E9-BFDA-76301F45BF6E}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{68E23843-4040-4981-B4FD-672458E36518}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16{6AF650C4-2D94-4B16-B921-4EBDE8D6BDE1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=bool{6C6390E0-78DB-4CA5-A95F-6D3D9848180C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32{6C8CE586-E6FC-4B8B-84C8-45D6205A0884}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=bool{6DC573CD-C3E0-4C63-887F-EB38C0876F0D}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=bool{716CDD83-81DD-4543-B0F7-3A9E95AFA6E0}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{79D29BA9-3AD4-4E20-9AF8-1A8ACFFA2D00}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{7AFE976A-F93A-4BE8-AA87-820B4839B18F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{7E0F04BC-3096-4A96-B9F6-597E2C07680F}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{804A876B-4131-40A4-A3D4-1ED456190E75}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=bool{80F43E8D-B0E1-41E6-B7C9-053E80F0280E}ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{81698F92-AD01-4B84-A412-0DFAF8ACDFAB}ResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{896C13BB-8215-487E-AE60-64F7AB30DA28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64{8BB0C63D-819D-45BD-98B4-52C1D4D27E6A}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=bool{8D6F4009-C5AE-4525-B155-62429B531669}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=bool{8EB0B01F-D33A-4B02-92ED-85991C028450}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=bool{8EEC9A2E-D597-44A9-9E47-2962370BEBA3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{92DCDDC6-462A-40C3-BA23-22483CFECAF1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=bool{9A87B822-AD17-4A85-8AE9-E9FC9D552BCD}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16{9E7B5B8D-C270-4B50-ACCB-BE5B62F93DD2}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"{9EACC95C-F751-4F9B-B0C1-853D2E86637F}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=bool{A0397502-56B9-434D-BD94-95CDC122A57E}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8{A92A45C9-0636-4935-AF5A-C93A3781B3EB}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=bool{ACB1A011-C2E2-44AC-A5E2-82DD410BD727}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{B1EC6E59-0DD9-4335-AE7C-D489F3B1115D}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{B1FC76CA-8895-4504-A2D3-688796960052}NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=bool{B8C02DBC-BFC7-4AB9-A412-D426BBA6C04C}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=bool{BF31DB52-0653-4664-8BA5-A88C8F091EF6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=bool{C01F3804-B840-49BD-8C60-1221CD076506}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=bool{C0E9FCBE-C817-4771-90F2-7F1B040FEB6C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl{C1670552-0C3D-411A-B9A1-6943695973D5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=bool{C331BEDC-691D-4633-80AC-5791E9506A54}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{C88ECC99-2207-491B-A2F0-B2BD963BF355}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64{CAC54BAC-5DED-4380-8E47-F8618B0C800C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16{CE0294B1-16BD-4B25-AAB0-9F3CC98DC358}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=bool{CEE51689-365F-4DF6-91E7-DEB9E0905707}NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32{D1E0B904-B8D3-447B-9F17-C889D8C595DD}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=bool{D24193DE-18B7-4685-AE85-02E481840CE4}NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16{D6325BDA-0645-4B6A-B08E-BAA14F7541F2}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=bool{D79D4DF5-EE6F-492D-A7D8-7545A6A7CE66}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=bool{D88C555C-7135-4CE5-AAD7-401DF0A88600}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=bool{DF714A68-B96A-490B-8047-B0C2AC9493D9}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=bool{F029F4B2-1D4A-4E3C-8DF1-07DF480D87D3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=bool{F1A38483-2AB4-42C6-8840-A342F74CF6EE}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64{F289C2EA-14DC-464B-9656-E9AA640DD585}NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=bool{F42E768D-C4F4-446E-97D3-CB6A15FDE2A1}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl{F9100780-7555-4031-9BBC-B040873ACBC8}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=bool{FA8BAC6F-5545-44C5-AA7D-ECC0786F8D2A}"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{FAE10E04-4AA2-461E-BC39-27FB873A46E5}ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=bool{FCA43A2D-9415-468F-8E53-BDF141864CFB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolUSRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-				<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=RioClk40;ClockSignalName=RioClk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;ADC Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Locked;0;ReadMethodType=boolADC Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/ADC Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 0ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 0;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 10ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 10;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 11ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 11;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 1ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 1;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 2ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 2;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 3ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 3;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 4ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 4;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 5ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 5;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 6ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 6;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 7ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 7;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 8ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 8;0;ReadMethodType=bool;WriteMethodType=boolAUX I/O 9ArbitrationForOutputData=NeverArbitrate;ArbitrationForOutputEnable=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForOutputEnable=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/AUX I\/O/AUX I\/O 9;0;ReadMethodType=bool;WriteMethodType=boolClock Chip LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Clock Chip Locked;0;ReadMethodType=boolDAC FIFO ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/DAC FIFO Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock PLL LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Locked;0;ReadMethodType=boolData Clock PLL ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/Data Clock PLL Reset;0;ReadMethodType=bool;WriteMethodType=boolData Clock x2ResourceName=Data Clock x2;TopSignalConnect=RadioClk2x;ClockSignalName=RadioClk2x;MinFreq=400000000.000000;MaxFreq=400000000.000000;VariableFreq=0;NomFreq=400000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;Data ClockResourceName=Data Clock;TopSignalConnect=RadioClk;ClockSignalName=RadioClk;MinFreq=200000000.000000;MaxFreq=200000000.000000;VariableFreq=0;NomFreq=200000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;DRAM ReadyNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/DRAM Ready;0;ReadMethodType=boolFIFO"ControlLogic=0;NumberOfElements=2047;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;FIFO;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"Global Control AcknowledgeNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Acknowledge;0;ReadMethodType=boolGlobal Control AddressArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Address;0;ReadMethodType=u16;WriteMethodType=u16Global Control Cycle EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Cycle Enable;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data In;0;ReadMethodType=u32;WriteMethodType=u32Global Control Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Data Out;0;ReadMethodType=u32Global Control ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Reset;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control SelectArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Select;0;ReadMethodType=u8;WriteMethodType=u8Global Control StrobeArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Strobe;0;ReadMethodType=bool;WriteMethodType=boolGlobal Control Write EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Global Control Write Enable;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS Data In ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In Valid;0;ReadMethodType=boolGPS Data InNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data In;0;ReadMethodType=u8GPS Data Out Ready For OutputNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Ready For Output;0;ReadMethodType=boolGPS Data Out ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out Valid;0;ReadMethodType=bool;WriteMethodType=boolGPS Data OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS Data Out;0;ReadMethodType=u8;WriteMethodType=u8GPS LockedNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS Locked;0;ReadMethodType=boolGPS NMEA Ready For InputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Ready For Input;0;ReadMethodType=bool;WriteMethodType=boolGPS NMEA ValidNumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA Valid;0;ReadMethodType=boolGPS NMEANumberOfSyncRegistersForReadInProject=0;resource=/Board Interface/GPS NMEA;0;ReadMethodType=u8GPS PPSNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/GPS PPS;0;ReadMethodType=boolLED/GPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/GPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/LINKArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/LINK;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/PPSArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/PPS;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/REFArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/REF;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 0/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 0\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlLED/RF 1/RX2ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/RX2;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_Green.ctlLED/RF 1/TX1 RX1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/LEDs/LED\/RF 1\/TX1 RX1;0;ReadMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctl;WriteMethodType=Targets\NI\FPGA\USRP\Common\niUsrpRio_Led_State_GreenRed.ctlPPS Trig InNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig In;0;ReadMethodType=boolPPS Trig OutArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/PPS Trig Out;0;ReadMethodType=bool;WriteMethodType=boolReference ClockNumberOfSyncRegistersForReadInProject=Auto;resource=/Board Interface/Reference Clock;0;ReadMethodType=boolreg.host instruction fifo 0"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;reg.host instruction fifo 0;DataType=100080000000000100094008000355363400010000000000000000000000000000;DisableOnOverflowUnderflow=FALSE"RF 0/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 0/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Control Ready for Input;0;ReadMethodType=boolRF 0/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Out;0;ReadMethodType=u64RF 0/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Data Valid;0;ReadMethodType=boolRF 0/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Last;0;ReadMethodType=boolRF 0/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Control/RF 0\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Data Valid;0;ReadMethodType=boolRF 0/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/I;0;ReadMethodType=i16RF 0/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Q;0;ReadMethodType=i16RF 0/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Rx/RF 0\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 0/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 0/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 0/Tx/RF 0\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Data InArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data In;0;ReadMethodType=u64;WriteMethodType=u64RF 1/Control Data ValidArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Data Valid;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control LastArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Last;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Control Ready for InputNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Control Ready for Input;0;ReadMethodType=boolRF 1/Response Data OutNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Out;0;ReadMethodType=u64RF 1/Response Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Data Valid;0;ReadMethodType=boolRF 1/Response LastNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Last;0;ReadMethodType=boolRF 1/Response Ready for OutputArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Control/RF 1\/Response Ready for Output;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Data ValidNumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Data Valid;0;ReadMethodType=boolRF 1/Rx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/INumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/I;0;ReadMethodType=i16RF 1/Rx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Rx/QNumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Q;0;ReadMethodType=i16RF 1/Rx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Rx/RF 1\/Rx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/EnableArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Enable;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/I;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Negate IArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate I;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/Negate QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Negate Q;0;ReadMethodType=bool;WriteMethodType=boolRF 1/Tx/QArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;NumberOfSyncRegistersForReadInProject=0;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Q;0;ReadMethodType=i16;WriteMethodType=i16RF 1/Tx/Swap IQArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF 1/Tx/RF 1\/Tx\/Swap IQ;0;ReadMethodType=bool;WriteMethodType=boolRF Control Command ResetArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;NumberOfSyncRegistersForReadInProject=Auto;resource=/Radio Interface/RF Control Command Reset;0;ReadMethodType=bool;WriteMethodType=boolrx 0.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 0.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 1.host fifo"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Rx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 2.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 2.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"rx 3.host fifo"ControlLogic=0;NumberOfElements=15;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;rx 3.host fifo;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 0.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 0;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"tx 1.host fifo"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;Tx Stream 1;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"USRP 294xR; 295xR 200 MSps/RioClk40/falsefalseFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSUSRP_294XR__295XR_200_MSPSFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">C:\Users\jfernand\Desktop\USRP-RIO-Streaming\FPGA Bitfiles\USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
-			</Item>
-			<Item Name="Dependencies" Type="Dependencies">
-				<Item Name="instr.lib" Type="Folder">
-					<Item Name="niInstr Register Bus v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/Register Bus/v1/FPGA/niInstr Register Bus v1 FPGA.lvlib"/>
-					<Item Name="niInstr Basic Elements v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/niInstr Basic Elements v1 FPGA.lvlib"/>
-					<Item Name="niUsrpRio Time v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/Shared/niUsrpRio Time v1 Shared.lvlib"/>
-					<Item Name="niUsrpRio Config v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/Shared/niUsrpRio Config v1 Shared.lvlib"/>
-					<Item Name="niUsrpRio Time v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Time/v1/FPGA/niUsrpRio Time v1 FPGA.lvlib"/>
-					<Item Name="niUsrpRio Config v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Config/v1/FPGA/niUsrpRio Config v1 FPGA.lvlib"/>
-					<Item Name="niUsrpRio GPS v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/Shared/niUsrpRio GPS v1 Shared.lvlib"/>
-					<Item Name="niUsrpRio GPS v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/GPS/v1/FPGA/niUsrpRio GPS v1 FPGA.lvlib"/>
-					<Item Name="niUsrpRio Synchronization v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/FPGA/niUsrpRio Synchronization v1 FPGA.lvlib"/>
-					<Item Name="niUsrpRio Synchronization v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Synchronization/v1/Shared/niUsrpRio Synchronization v1 Shared.lvlib"/>
-					<Item Name="niUsrpRio Instruction Synchronizer v1 Shared.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/Shared/niUsrpRio Instruction Synchronizer v1 Shared.lvlib"/>
-					<Item Name="niUsrpRio Instruction Synchronizer v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/niUsrpRio/Instruction Synchronizer/v1/FPGA/niUsrpRio Instruction Synchronizer v1 FPGA.lvlib"/>
-					<Item Name="DFlopBasicElements_C792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEPresetSimFiles/DFlopBasicElements_C792537791DE412E8810E138F5BC4696.dll"/>
-					<Item Name="xsimkC792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEPresetSimFiles/xsim.dir/DFlopBasicElements/xsimkC792537791DE412E8810E138F5BC4696.dll"/>
-					<Item Name="DFlopBasicElements_0B830B7E81994019B09E50CE7A175B36.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEResetSimFiles/DFlopBasicElements_0B830B7E81994019B09E50CE7A175B36.dll"/>
-					<Item Name="xsimk0B830B7E81994019B09E50CE7A175B36.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DFlopBEResetSimFiles/xsim.dir/DFlopBasicElements/xsimk0B830B7E81994019B09E50CE7A175B36.dll"/>
-					<Item Name="DoubleSyncBasicElements_C792537791DE412E8810E138F5BC4696.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/DblSyncBEResetSimFiles/DoubleSyncBasicElements_C792537791DE412E8810E138F5BC4696.dll"/>
-					<Item Name="MaxFanoutFf_E0EDB5E65B8B49DD8E163F5688E824C1.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_4SimFiles/MaxFanoutFf_E0EDB5E65B8B49DD8E163F5688E824C1.dll"/>
-					<Item Name="xsimkE0EDB5E65B8B49DD8E163F5688E824C1.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_4SimFiles/xsim.dir/MaxFanoutFf/xsimkE0EDB5E65B8B49DD8E163F5688E824C1.dll"/>
-					<Item Name="MaxFanoutFf_6A315D12FBC743E4ACD121A1951E87AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_8SimFiles/MaxFanoutFf_6A315D12FBC743E4ACD121A1951E87AC.dll"/>
-					<Item Name="xsimk6A315D12FBC743E4ACD121A1951E87AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_8SimFiles/xsim.dir/MaxFanoutFf/xsimk6A315D12FBC743E4ACD121A1951E87AC.dll"/>
-					<Item Name="MaxFanoutFf_36915C3B0A964A738AD3121E87CF92C2.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_16SimFiles/MaxFanoutFf_36915C3B0A964A738AD3121E87CF92C2.dll"/>
-					<Item Name="xsimk36915C3B0A964A738AD3121E87CF92C2.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_16SimFiles/xsim.dir/MaxFanoutFf/xsimk36915C3B0A964A738AD3121E87CF92C2.dll"/>
-					<Item Name="MaxFanoutFf_417FC7712F0F4A3C95450BAF224B3F38.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_32SimFiles/MaxFanoutFf_417FC7712F0F4A3C95450BAF224B3F38.dll"/>
-					<Item Name="xsimk417FC7712F0F4A3C95450BAF224B3F38.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Public/ModGen/ff_max_fanout_32SimFiles/xsim.dir/MaxFanoutFf/xsimk417FC7712F0F4A3C95450BAF224B3F38.dll"/>
-					<Item Name="FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/FourInputGlitchFreeMuxBasicElements_B15BA4892E5F4023A51AA2E61B6FD011.dll"/>
-					<Item Name="xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/Basic Elements/v1/FPGA/Private/GlitchlessMux_4InputSimFiles/xsim.dir/FourInputGlitchFreeMuxBasicElements/xsimkB15BA4892E5F4023A51AA2E61B6FD011.dll"/>
-					<Item Name="niInstr Overclocked TDC v1 FPGA.lvlib" Type="Library" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/niInstr Overclocked TDC v1 FPGA.lvlib"/>
-					<Item Name="xsimkED9697BB179F486B937DBFC6036BE2CD.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/xsim.dir/k7Tdc/xsimkED9697BB179F486B937DBFC6036BE2CD.dll"/>
-					<Item Name="Tdc_B556FC327CC64155836DD41C31E521AC.dll" Type="Document" URL="/&lt;instrlib&gt;/_niInstr/TDC/v1/FPGA/Private/TDCSimFiles/Tdc_B556FC327CC64155836DD41C31E521AC.dll"/>
-				</Item>
-				<Item Name="vi.lib" Type="Folder">
-					<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
-					<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
-				</Item>
-			</Item>
-			<Item Name="Build Specifications" Type="Build">
-				<Item Name="USRP Dummy (FPGA)" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
-					<Property Name="AllowEnableRemoval" Type="Bool">true</Property>
-					<Property Name="BuildSpecDecription" Type="Str"></Property>
-					<Property Name="BuildSpecName" Type="Str">USRP Dummy (FPGA)</Property>
-					<Property Name="Comp.BitfileName" Type="Str">USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
-					<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
-					<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
-					<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
-					<Property Name="Comp.Version.Build" Type="Int">0</Property>
-					<Property Name="Comp.Version.Fix" Type="Int">0</Property>
-					<Property Name="Comp.Version.Major" Type="Int">1</Property>
-					<Property Name="Comp.Version.Minor" Type="Int">0</Property>
-					<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
-					<Property Name="Comp.Vivado.EnableMultiThreading" Type="Bool">true</Property>
-					<Property Name="Comp.Vivado.OptDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.PhysOptDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.PlaceDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.RouteDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.RunPowerOpt" Type="Bool">false</Property>
-					<Property Name="Comp.Vivado.Strategy" Type="Str">Default</Property>
-					<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">balanced</Property>
-					<Property Name="Comp.Xilinx.MapEffort" Type="Str">default(noTiming)</Property>
-					<Property Name="Comp.Xilinx.ParEffort" Type="Str">standard</Property>
-					<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
-					<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
-					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
-					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
-					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/USRP-RIO-Streami_DummyDMA_USRPDummy(FPGA)_kay5ptBR-r4.lvbitx</Property>
-					<Property Name="ProjectPath" Type="Path">/C/Users/jfernand/Desktop/USRP-RIO-Streaming/USRP-RIO-Streaming.lvproj</Property>
-					<Property Name="RelativePath" Type="Bool">true</Property>
-					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
-					<Property Name="SupportDownload" Type="Bool">true</Property>
-					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
-					<Property Name="TargetName" Type="Str">Dummy DMA</Property>
-					<Property Name="TopLevelVI" Type="Ref">/My Computer/Dummy DMA/USRP Dummy (FPGA).vi</Property>
 				</Item>
 			</Item>
 		</Item>
