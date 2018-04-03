@@ -33,6 +33,7 @@ lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LV
 # git config diff.external <path_to_wrapper_script> (changed just for the current repo)
 # be careful with slashes and characters that need to be escaped
 #	e.g. external = \"/c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh\"
+# https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
 
 local=$(abspath "$2") 
 remote=$(abspath "$5")
