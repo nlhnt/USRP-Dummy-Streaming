@@ -26,6 +26,11 @@ echo LVCompareWrapper
 
 lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
 
+local=$(abspath "$2") 
+remote=$(abspath "$5")
+
+exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
+
 # References
 # https://github.com/wireddown/LabViewGitEnv
 # http://zone.ni.com/reference/en-XX/help/371361G-01/lvhowto/configlvcomp_thirdparty/
@@ -34,8 +39,3 @@ lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LV
 # be careful with slashes and characters that need to be escaped
 #	e.g. external = \"/c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh\"
 # https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
-
-local=$(abspath "$2") 
-remote=$(abspath "$5")
-
-exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
