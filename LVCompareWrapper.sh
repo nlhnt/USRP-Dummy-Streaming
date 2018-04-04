@@ -1,49 +1,88 @@
 #!/bin/sh
 
-# diff is called by git with 7 parameters:
-# path old-file old-hex old-mode new-file new-hex new-mode
+# .gitattributes
+# Changes are isolated to this repo, only changed on .git/info/attributes
+# *.vi difftool=lvdiff
+# *.ctl difftool=lvdiff
 
-#"/c/Program Files/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
+# .gitconfig
+# Changes are isolated to this repo all commands prefaced with --local
+# [diff]
+#     tool = lvdiff
+# [difftool "lvdiff"]
+#     cmd = $GIT_WORK_TREE/LVCompareWrapper.sh $LOCAL $REMOTE $BASE $MERGED
 
-# Method to determine absolute path
-# The -W parameter on the pwd command is necessary to return the Windows 
-# version of the path. Not using the -W parameter will result in a conversion
-# of temp directory to a 'tmp' path meaningful only in the Linux environment.
-# Piping the result through tr '/' '\\' translates the forward slashes to backslashes.
+# sed RegEx to replace / by \ in Path
+PATHFIX='s/\//\\/g'
+
+# sed RegEx to replace trailing ./ with \
+TRAILFIX='s/^.\//\\/'
+
+# Remove ending / or \
+ENDFIX='s/[\\/]+$//g'
+
+# Make Path suitable for Windows (C: instead of /c)
+MKWINPATH='s/^\/\([a-z]\)/\U\1:/'
+
+# Check if Path is abolsute: if either ^/@/ or ^@:\ where @ is the drive letter
+ABSPATH='^([a-zA-Z]:\\|/[a-zA-Z]/)'
+
+# Methods to convert POSIX to DOS path and create absolute path
 # Windows understands forward slashes, but LVCompare.exe does not.
 
-abspath () 
+fixpath()
 {
-    (
-    DIR=$(dirname "$1")
-    FN=$(basename "$1")
-    cd "$DIR"
-    echo -n "$(pwd -W)/$FN" | tr '/' '\\' 
-    )
+    echo $1 | sed -e "${ENDFIX}" | sed -e "${MKWINPATH}" | sed -e  "${PATHFIX}"
 }
 
-echo LVCompareWrapper
+abspath()
+{
+    echo $(pwd)/$1
+}
 
-lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
-lvversion="C:\Program Files (x86)\National Instruments\LabVIEW 2016\LabVIEW.exe"
+lvcompare=$(fixpath "C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe")
+lvversion=$(fixpath "C:/Program Files (x86)/National Instruments/LabVIEW 2016/LabVIEW.exe")
 
-local=$(abspath "$1") 
-remote=$(abspath "$2")
+printf "Compare Wrapper Script\n"
 
-exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
+# Check lvcompare and lvverxion path
+echo $lvcompare
+echo $lvversion
+
+# Testing bash script and .gitconfig location
+echo Repository Directory: $(pwd)
+echo LOCAL: $1
+echo REMOTE: $2
+echo BASE: $3
+echo MERGED: $4
+
+# Quotes around variable avoid string being chopped at the first space
+printf "Convert from POSIX to DOS\n"
+fixpath "$1"
+fixpath "$(abspath "$2")"
+
+local=$(fixpath "$1")
+remote=$(fixpath "$(abspath "$2")")
+
+echo $local
+echo $remote
+
+# Select difftool based on extension
+case "${1##*.}" in
+    "vi")
+        exec "$lvcompare" "$local" "$remote" -nobdcosm -nofppos -nobdpos -lvpath "$lvversion"
+        ;;
+    *)
+        exec /usr/bin/vimdiff $1 $2
+        ;;
+esac
 
 # References
 # https://github.com/wireddown/LabViewGitEnv
 # http://zone.ni.com/reference/en-XX/help/371361G-01/lvhowto/configlvcomp_thirdparty/
 # https://github.com/adchurch/labview-compare-wrapper
-# git config diff.external <path_to_wrapper_script> (changed just for the current repo)
-# be careful with slashes and characters that need to be escaped
-#	e.g. external = \"/c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh\"
-# [diff]
-#         tool = lvdiff
-# [difftool "lvdiff"]
-#         cmd = /c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh \"$LOCAL\" \"$REMOTE\"
 # https://stackoverflow.com/questions/255202/how-do-i-view-git-diff-output-with-my-preferred-diff-tool-viewer
 # https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
 # http://kaskavalci.com/configuring-multiple-git-difftool-and-mergetool-based-on-file-extension/
 # https://stackoverflow.com/questions/28026767/where-should-i-place-my-global-gitattributes-file
+# https://stackoverflow.com/questions/9032133/multiple-diff-tools
