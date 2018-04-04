@@ -25,6 +25,12 @@ abspath ()
 echo LVCompareWrapper
 
 lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
+lvversion="C:\Program Files (x86)\National Instruments\LabVIEW 2016\LabVIEW.exe"
+
+local=$(abspath "$2") 
+remote=$(abspath "$5")
+
+exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 
 # References
 # https://github.com/wireddown/LabViewGitEnv
@@ -33,6 +39,7 @@ lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LV
 # git config diff.external <path_to_wrapper_script> (changed just for the current repo)
 # be careful with slashes and characters that need to be escaped
 #	e.g. external = \"/c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh\"
+<<<<<<< HEAD
 # [diff]
 #         tool = lvdiff
 # [difftool "lvdiff"]
@@ -43,3 +50,6 @@ local=$(abspath "$1")
 remote=$(abspath "$2")
 
 exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
+=======
+# https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
+>>>>>>> 99486c9628c62a8cdc1f0aa454c900cf76b964e2
