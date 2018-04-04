@@ -25,11 +25,12 @@ abspath ()
 echo LVCompareWrapper
 
 lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
+lvversion="C:\Program Files (x86)\National Instruments\LabVIEW 2016\LabVIEW.exe"
 
 local=$(abspath "$2") 
 remote=$(abspath "$5")
 
-exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
+exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 
 # References
 # https://github.com/wireddown/LabViewGitEnv
