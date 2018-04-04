@@ -46,3 +46,4 @@ exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 # https://stackoverflow.com/questions/255202/how-do-i-view-git-diff-output-with-my-preferred-diff-tool-viewer
 # https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
 # http://kaskavalci.com/configuring-multiple-git-difftool-and-mergetool-based-on-file-extension/
+# https://stackoverflow.com/questions/28026767/where-should-i-place-my-global-gitattributes-file
