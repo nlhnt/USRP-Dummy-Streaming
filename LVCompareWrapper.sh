@@ -28,7 +28,7 @@ lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LV
 lvversion="C:\Program Files (x86)\National Instruments\LabVIEW 2016\LabVIEW.exe"
 
 local=$(abspath "$1") 
-remote=$(abspath "$2:q")
+remote=$(abspath "$2")
 
 exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 
