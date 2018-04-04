@@ -39,17 +39,15 @@ exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 # git config diff.external <path_to_wrapper_script> (changed just for the current repo)
 # be careful with slashes and characters that need to be escaped
 #	e.g. external = \"/c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh\"
-<<<<<<< HEAD
 # [diff]
 #         tool = lvdiff
 # [difftool "lvdiff"]
 #         cmd = /c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh \"$LOCAL\" \"$REMOTE\"
 # https://stackoverflow.com/questions/255202/how-do-i-view-git-diff-output-with-my-preferred-diff-tool-viewer
+# https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
 
 local=$(abspath "$1") 
 remote=$(abspath "$2")
 
 exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
-=======
-# https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
->>>>>>> 99486c9628c62a8cdc1f0aa454c900cf76b964e2
+
