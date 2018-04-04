@@ -27,8 +27,8 @@ echo LVCompareWrapper
 lvcompare="C:/Program Files (x86)/National Instruments/Shared/LabVIEW Compare/LVCompare.exe"
 lvversion="C:\Program Files (x86)\National Instruments\LabVIEW 2016\LabVIEW.exe"
 
-local=$(abspath "$2") 
-remote=$(abspath "$5")
+local=$(abspath "$1") 
+remote=$(abspath "$2:q")
 
 exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 
@@ -45,9 +45,3 @@ exec "$lvcompare" -nobdpos -nofppos "$local" "$remote" --lvpath "$lvversion"
 #         cmd = /c/Projects/USRP-RIO-Streaming/LVCompareWrapper.sh \"$LOCAL\" \"$REMOTE\"
 # https://stackoverflow.com/questions/255202/how-do-i-view-git-diff-output-with-my-preferred-diff-tool-viewer
 # https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/#entry108533
-
-local=$(abspath "$1") 
-remote=$(abspath "$2")
-
-exec "$lvcompare" -nobdpos -nofppos "$local" "$remote"
-
