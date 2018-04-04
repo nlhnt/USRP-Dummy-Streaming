@@ -40,7 +40,7 @@ git difftool --tool=lvdiff
 ```
 Be aware that you will need to do some local .gitconfig changes, all documented in: [LVCompareWrapper.sh](https://github.com/NISystemsEngineering/USRP-RIO-Streaming/blob/master/LVCompareWrapper.sh). This git LVCompare.exe integration is experimental so please use with patience and care. Some lines will look like they were written by a noob, this is due to a combination of making the script as clear as possible as well as really being noob writing bash scripts.
 
-What does vim has to do with this script? vimdiff is the default difftool if the extension of a file is not .vi"
+What does vim has to do with this script? vimdiff is the default difftool if the extension of a file is not __.vi__
 
 ## License
 [MIT License](https://github.com/NISystemsEngineering/USRP-RIO-Streaming/blob/master/LICENSE.md)
