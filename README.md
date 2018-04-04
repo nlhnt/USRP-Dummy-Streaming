@@ -33,5 +33,12 @@ The codes has a U64 LSFR that has not been tied to the **target to host** FIFO a
 may not trully implement an LSFR :). The LabVIEW FGPA implements a [Fibonacci LSFR](https://en.wikipedia.org/wiki/Linear-feedback_shift_register#Fibonacci_LFSRs) but  has not been validated. For now the code only
 streams a sequential ramp. 
 
+If you are running on a command line with access to vim you can use the following command to diff inside your repo:
+
+```
+git difftool --tool=lvdiff
+```
+Be aware that you will need to do some local .gitconfig changes all documented in: [LVCompareWrapper.sh](https://github.com/NISystemsEngineering/USRP-RIO-Streaming/blob/master/LVCompareWrapper.sh). This is experimental and the bash script has some good references used during the development of the script. Some lines will look like they were written by a noob, this is due to a combination of making the script as clear as possible as well as really being noob writing bash scripts :).
+
 ## License
 [MIT License](https://github.com/NISystemsEngineering/USRP-RIO-Streaming/blob/master/LICENSE.md)
