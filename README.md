@@ -14,8 +14,13 @@ target to host. The X310 (the USRP module motherboard) has 2 ADC with 2 channels
 at 200 MSps (mega samples per seconds) you end up:
 
 ```
-1.6 GBytes/seconds = 2 ADC * 2 channels per ADC * 16 bits per sample * 200 Mega samples per second / 8 bits per byte
+1.6 GB/s = 2 ADC * 2 channels/ADC * 16 b/S * 200 MSps / 8 b/B
 ```
+B = Bytes
+b = bits
+S = Samples
+s = seconds
+/ = per
 
 ### Things to remember:
 * Reserving the space in disk for the async tdms requires admin priviliges. Make sure you launch
