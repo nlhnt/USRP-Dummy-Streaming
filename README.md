@@ -6,8 +6,16 @@ the minimum dependencies so it can be compile with other targets.
 
 For now the code streams at discrete decimation steps of 200 MHz a sequential, incrementing
 ramp of U64 that starts at 0. In the host you will see the ramp skip values depending on the
-requested decimation. The minimum value decimation value is 2 which yields u64s at 200/2 MHz
-for a total of 8 bytes at 100 MHz or 800 MB/s.
+requested decimation. The minimum discrete decimation, supported by a Gen1x4 PXIe-8374,
+is 2, which yields 1xu64s at 200/2 MHz for a total of 8 bytes at 100 MHz or 800 MB/s.
+
+A single X310, independently of the daughterboard, can potentially move 1.6 GB/s of data from
+target to host. The X310 (the USRP module motherboard) has 2 ADC with 2 channels each. Running
+at 200 MSps (mega samples per seconds) you end up:
+
+```
+1.6 GBytes/seconds = 2 ADC * 2 channels per ADC * 16 bits per sample * 200 Mega samples per second / 8 bits per byte
+```
 
 ### Things to remember:
 * Reserving the space in disk for the async tdms requires admin priviliges. Make sure you launch
