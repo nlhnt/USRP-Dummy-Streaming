@@ -26,6 +26,11 @@ s = seconds
 * Reserving the space in disk for the async tdms requires admin priviliges. Make sure you launch
 LabVIEW accordingly.
 
+#### To see the example in action run:
+
+- ".....\USRP-RIO-Streaming\Host\USRP Dummy DMA to Memory (Host).vi" or
+- ".....\USRP-RIO-Streaming\Host\USRP Dummy DMA Zero Copy (Host).vi"
+
 ### System BOM
 * Hardware
 	- PXIe-8135
